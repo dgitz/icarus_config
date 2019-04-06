@@ -1,0 +1,5 @@
+http://dgitzrosmaster:46473/ 	/dgitzrosmaster_master_node
+http://dgitzrosmaster:36991/ 	/dgitzrosmaster_networktransceiver_node
+http://dgitzrosmaster:38483/ 	/dgitzrosmaster_timemaster_node
+http://dgitzrosmaster:41289/ 	/dgitzrosmaster_topicremapper_node
+http://dgitzrosmaster:45611/ 	/rosout

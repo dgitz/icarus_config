@@ -1,0 +1,47 @@
+#Available devices: dgitzrosmaster,ControlModule1,ControlModule2
+#Always Running Section
+#Use a pound sign for comments
+AlwaysOnNodes = {
+    "TimeMaster_Node" => device["dgitzrosmaster"]
+    #"TimeSlave_Node" => device["ControlModule2"]
+    #Communications
+    "NetworkTransceiver_Node" => device["dgitzrosmaster"] 
+    
+}
+#Normal Running Section
+RunningNodes = {
+    #Communications
+    #"TopicRemapper_Node"    => device["dgitzrosmaster"]
+#Control
+    "Master_Node" => device["dgitzrosmaster"]
+    "Command_Node" => device["dgitzrosmaster"]
+    "Navigation_Node" => device["dgitzrosmaster"]
+
+#Diagnostics
+    "Diagnostic_Node" => device["dgitzrosmaster"]
+    #"Safety_Node" => device["dgitzrosmaster"]
+
+#Sensors
+    #"IMU_Node" => device["ControlModule1"]
+    #"IMU_Node" => device["ControlModule2"]
+
+#Pose
+    #"Calibration_Node" => device["dgitzrosmaster"]
+    
+
+#Board and Hat
+    #"HatController_Node" => device["ControlModule1"]
+    #"BoardController_Node" => device["ControlModule2"]
+    #"HatController_Node" => device["ControlModule2"]
+
+#User Control
+    #"Audio_Node" => device["ControlModule1"]
+
+#Testing
+    #"Sample_Node" => device["dgitzrosmaster"]
+    #"Sample_Node2" => device["dgitzrosmaster"]
+
+#Simulation
+
+    
+}
