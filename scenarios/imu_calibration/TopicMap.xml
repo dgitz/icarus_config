@@ -46,8 +46,8 @@
                 <ParentDevice>PWMHat1</ParentDevice>
                 <PinNumber>5</PinNumber>
                 <Function>PWMOutput-NonActuator</Function>
-                <MaxValue>1600</MaxValue>
-                <MinValue>538</MinValue>
+                <MaxValue>1650</MaxValue>
+                <MinValue>500</MinValue>
                 <NeutralValue>1175</NeutralValue>
                 <Deadband>0</Deadband>
             </OutputChannel>

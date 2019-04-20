@@ -4,6 +4,7 @@
 AlwaysOnNodes = {
     "TimeMaster_Node" => device["ControlModule1"]
     "TimeSlave_Node" => device["ControlModule2"]
+    "TimeSlave_Node" => device["dgitzrosmaster"]
     #Communications
     "NetworkTransceiver_Node" => device["ControlModule1"] 
     
@@ -19,6 +20,7 @@ RunningNodes = {
     "Command_Node" => device["ControlModule1"]
 
 #Diagnostics
+    "DataLogger_Node" => device["dgitzrosmaster"]
     "Diagnostic_Node" => device["ControlModule2"]
 
 #Sensors
