@@ -11,6 +11,7 @@ AlwaysOnNodes = {
 }
 #Normal Running Section
 RunningNodes = {
+    #Timing
     #Communications
     "TopicRemapper_Node"    => device["ControlModule1"]
 #Control

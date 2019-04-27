@@ -44,9 +44,10 @@
         <DeviceType>RaspiberryPiCamera</DeviceType>
         <Capability>CameraStream</Capability>
     </Device>
+
     <Device>
         <ParentDevice>ControlModule1</ParentDevice>
-        <PartNumber>110012</PartNumber>
+        <PartNumber>110015</PartNumber>
         <DeviceName>RightIMU</DeviceName>
         <DeviceType>IMU</DeviceType>
     </Device>

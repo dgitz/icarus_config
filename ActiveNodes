@@ -1,2 +1,3 @@
-Node:	dgitzrosmaster_datalogger_node	Launched:	20/04/2019 08:56:52
-Node:	dgitzrosmaster_master_node	Launched:	20/04/2019 08:56:52
+Node:	dgitzrosmaster_imu_node	Launched:	27/04/2019 06:46:34
+Node:	dgitzrosmaster_master_node	Launched:	27/04/2019 06:46:34
+Node:	dgitzrosmaster_timemaster_node	Launched:	27/04/2019 06:46:34
