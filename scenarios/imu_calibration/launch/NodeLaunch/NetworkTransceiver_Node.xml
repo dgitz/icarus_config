@@ -1,5 +1,5 @@
 <node name="$(env ROS_HOSTNAME)_networktransceiver_node" pkg="icarus_rover_v2" type="networktransceiver_node"  output="screen" clear_params="true">
-        <param name="verbosity_level"       value="DEBUG"/>
+        <param name="verbosity_level"       value="WARN"/>
         <param name="startup_delay"         value="0.0" />
         <param name="require_pps_to_start"  value="false"/> 
         <param name="Send_Multicast_Group"       value="239.255.43.21"/>
