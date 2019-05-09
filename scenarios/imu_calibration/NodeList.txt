@@ -6,15 +6,16 @@ AlwaysOnNodes = {
     "TimeSlave_Node" => device["ControlModule2"]
     "TimeSlave_Node" => device["dgitzrosmaster"]
     #Communications
-    "NetworkTransceiver_Node" => device["ControlModule1"] 
+    "NetworkTransceiver_Node" => device["dgitzdev"] 
     
 }
 #Normal Running Section
 RunningNodes = {
     #Timing
     #Communications
-    "TopicRemapper_Node"    => device["ControlModule1"]
+    "TopicRemapper_Node"    => device["dgitzdev"]
 #Control
+    #"Master_Node" => device["dgitzdev"]
     "Master_Node" => device["ControlModule1"]
     "Master_Node" => device["ControlModule2"]
     "Master_Node" => device["dgitzrosmaster"]
@@ -22,7 +23,7 @@ RunningNodes = {
 
 #Diagnostics
     "DataLogger_Node" => device["dgitzrosmaster"]
-    "Diagnostic_Node" => device["ControlModule2"]
+    "Diagnostic_Node" => device["ControlModule1"]
 
 #Sensors
     "IMU_Node" => device["ControlModule1"]

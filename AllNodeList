@@ -1,4 +1,8 @@
-http://dgitzrosmaster:46467/ 	/dgitzrosmaster_imu_node
-http://dgitzrosmaster:36495/ 	/dgitzrosmaster_master_node
-http://dgitzrosmaster:38325/ 	/dgitzrosmaster_timemaster_node
-http://dgitzrosmaster:42451/ 	/rosout
+http://dgitzdev:35195/ 	/dgitzdev_command_node
+http://dgitzdev:40731/ 	/dgitzdev_diagnostic_node
+http://dgitzdev:35659/ 	/dgitzdev_imu_node
+http://dgitzdev:42165/ 	/dgitzdev_master_node
+http://dgitzdev:39495/ 	/dgitzdev_networktransceiver_node
+http://dgitzdev:35169/ 	/dgitzdev_timemaster_node
+http://dgitzdev:46649/ 	/dgitzdev_topicremapper_node
+http://dgitzdev:33133/ 	/rosout
