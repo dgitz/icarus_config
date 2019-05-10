@@ -89,34 +89,7 @@
         <Capability>GPIO</Capability>
         <ID>64</ID>
         <BoardCount>0</BoardCount>
-        <PinCount>3</PinCount>
-        <Pin>
-            <Name>PanServo</Name>
-            <Number>4</Number>
-            <Function>PWMOutput-NonActuator</Function>
-            <ConnectedDevice>PanServo</ConnectedDevice>
-            <DefaultValue>1500</DefaultValue>
-			<MaxValue>2000</MaxValue>
-            <MinValue>1000</MinValue>
-        </Pin>
-        <Pin>
-            <Name>RollServo</Name>
-            <Number>5</Number>
-            <Function>PWMOutput-NonActuator</Function>
-            <ConnectedDevice>RollServo</ConnectedDevice>
-            <DefaultValue>1500</DefaultValue>
-			<MaxValue>2000</MaxValue>
-            <MinValue>1000</MinValue>
-        </Pin>
-        <Pin>
-            <Name>TiltServo</Name>
-            <Number>6</Number>
-            <Function>PWMOutput-NonActuator</Function>
-            <ConnectedDevice>TiltServo</ConnectedDevice>
-            <DefaultValue>1500</DefaultValue>
-			<MaxValue>2000</MaxValue>
-            <MinValue>1000</MinValue>
-        </Pin>
+        <PinCount>0</PinCount>
        
     </Device>
     <Device>

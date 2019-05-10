@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Node:	dgitzdev_command_node	Launched:	09/05/2019 08:14:29
 Node:	dgitzdev_diagnostic_node	Launched:	09/05/2019 08:14:29
 Node:	dgitzdev_imu_node	Launched:	09/05/2019 08:14:29
@@ -5,3 +6,9 @@ Node:	dgitzdev_master_node	Launched:	09/05/2019 08:14:29
 Node:	dgitzdev_networktransceiver_node	Launched:	09/05/2019 08:14:29
 Node:	dgitzdev_timemaster_node	Launched:	09/05/2019 08:14:29
 Node:	dgitzdev_topicremapper_node	Launched:	09/05/2019 08:14:29
+=======
+Node:	dgitzrosmaster_datalogger_node	Launched:	04/05/2019 08:18:55
+Node:	dgitzrosmaster_master_node	Launched:	04/05/2019 08:18:55
+Node:	dgitzrosmaster_timemaster_node	Launched:	04/05/2019 08:18:55
+Node:	rostopic_28814_1556975888142	Launched:	04/05/2019 08:18:55
+>>>>>>> 520fde84fce4794a014dee83f80dcb6318245027
