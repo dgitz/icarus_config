@@ -2,7 +2,7 @@
 #Always Running Section
 #Use a pound sign for comments
 AlwaysOnNodes = {
-    "TimeMaster_Node" => device["ControlModule1"]
+    "TimeMaster_Node" => device["dgitzdev"]
     "TimeSlave_Node" => device["ControlModule2"]
     "TimeSlave_Node" => device["dgitzrosmaster"]
     
@@ -17,7 +17,7 @@ RunningNodes = {
     #"TopicRemapper_Node"    => device["ControlModule1"]
     
     #Control
-    #"Master_Node" => device["dgitzdev"]
+    "Master_Node" => device["dgitzdev"]
     "Master_Node" => device["ControlModule1"]
     "Master_Node" => device["ControlModule2"]
     "Master_Node" => device["dgitzrosmaster"]
