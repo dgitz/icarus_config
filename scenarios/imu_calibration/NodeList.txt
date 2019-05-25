@@ -2,7 +2,7 @@
 #Always Running Section
 #Use a pound sign for comments
 AlwaysOnNodes = {
-    "TimeMaster_Node" => device["ControlModule1"]
+    "TimeMaster_Node" => device["dgitzdev"]
     "TimeSlave_Node" => device["ControlModule2"]
     "TimeSlave_Node" => device["dgitzrosmaster"]
     "TimeSlave_Node" => device["dgitzdev"]
