@@ -17,6 +17,19 @@
     <Device>
         <ParentDevice>None</ParentDevice>
         <PartNumber>UNKNOWN</PartNumber>
+        <DeviceName>dgitzdev</DeviceName>
+        <DeviceType>ComputeModule</DeviceType>
+        <PrimaryIP>10.0.0.90</PrimaryIP>
+        <Architecture>x86_64</Architecture>
+        <ID>2</ID>
+        <Capability>ROS</Capability>
+        <BoardCount>0</BoardCount>
+        <HatCount>0</HatCount>
+        <SensorCount>0</SensorCount>
+    </Device>
+    <Device>
+        <ParentDevice>None</ParentDevice>
+        <PartNumber>UNKNOWN</PartNumber>
         <DeviceName>BuildServer1</DeviceName>
         <DeviceType>BuildServer</DeviceType>
         <PrimaryIP>10.0.0.179</PrimaryIP>
@@ -46,7 +59,7 @@
     </Device>
     <Device>
         <ParentDevice>ControlModule1</ParentDevice>
-        <PartNumber>110012</PartNumber>
+        <PartNumber>110015</PartNumber>
         <DeviceName>RightIMU</DeviceName>
         <DeviceType>IMU</DeviceType>
     </Device>
@@ -178,7 +191,7 @@
     </Device>
      <Device>
         <ParentDevice>ControlModule2</ParentDevice>
-        <PartNumber>110012</PartNumber>
+        <PartNumber>110015</PartNumber>
         <DeviceName>LeftIMU</DeviceName>
         <DeviceType>IMU</DeviceType>
     </Device>

@@ -54,45 +54,7 @@ find_package(Eigen REQUIRED)
 ##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
-## Generate messages in the 'msg' folder
-add_message_files(
-  FILES
-  resource.msg
-  diagnostic.msg
-  device.msg
-  pin.msg
-  command.msg
-  firmware.msg
-  heartbeat.msg
-  remotecontrol.msg
-  imu.msg
-  battery.msg
-  iopins.msg
-  signal.msg
-  pose.msg
-  #cell.msg
-  controlgroup.msg
-)
 
-## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
-
-## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
-#   Action1.action
-#   Action2.action
-# )
-
-## Generate added messages and services with any dependencies listed here
-generate_messages(
-   DEPENDENCIES
-  std_msgs
- )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -215,45 +177,40 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+include_directories(include ${catkin_INCLUDE_DIRS} ${roscpp_INCLUDE_DIRS})
+#Libraries-General
 add_library(logger util/logger.cpp)
+add_library(resourcemonitor util/resourcemonitor.cpp)
+
+#Libraries-Communications
 add_library(udpmessage util/udpmessage.cpp)
 add_library(serialmessage util/serialmessage.cpp)
-add_library(resourcemonitor util/resourcemonitor.cpp)
-add_library(command_node_process src/Control/command_node_process.cpp)
-add_library(visionhelper util/visionhelper.cpp)
-add_library(network_transceiver_node_process src/Communication/network_transceiver_node_process.cpp)
-add_library(pose_node_process src/Pose/pose_node_process.cpp)
-add_library(autodrive_node_process src/Control/autodrive_node_process.cpp)
+add_library(spimessage util/spimessage.cpp)
+add_library(i2cmessage util/i2cmessage.cpp)
 
-add_executable(timemaster_node src/Timing/timemaster_node.cpp)
-target_link_libraries(timemaster_node ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} ${roscpp_LIBRARIES} logger resourcemonitor)
+#Add CMakeLists for Templates
+add_subdirectory(src_templates)
 
-add_executable(diagnostic_node src/Diagnostics/diagnostic_node.cpp)
-target_link_libraries(diagnostic_node ${catkin_LIBRARIES} ${Boost_LIBRARIES} logger resourcemonitor)
+#Add CMakeLists for Board
+add_subdirectory(src/Board)
 
-add_executable(network_transceiver_node src/Communication/network_transceiver_node.cpp)
-target_link_libraries(network_transceiver_node ${catkin_LIBRARIES} ${Boost_LIBRARIES} logger udpmessage resourcemonitor network_transceiver_node_process)
+#Add CMakeLists for Communication
+add_subdirectory(src/Communication)
 
-add_executable(command_node src/Control/command_node.cpp)
-target_link_libraries(command_node ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} ${roscpp_LIBRARIES} logger resourcemonitor command_node_process)
-catkin_add_gtest(test_command_node_process src/Control/unit_tests/test_command_node_process.cpp)
-target_link_libraries(test_command_node_process ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} command_node_process logger serialmessage)
+#Add CMakeLists for Control
+add_subdirectory(src/Control)
 
-add_executable(master_node src/Control/master_node.cpp)
-target_link_libraries(master_node ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} ${roscpp_LIBRARIES} logger resourcemonitor)
+#Add CMakeLists for Diagnostics
+add_subdirectory(src/Diagnostics)
 
-add_executable(topicremapper_node src/Communication/topicremapper_node.cpp)
-target_link_libraries(topicremapper_node ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} logger resourcemonitor)
+#Add CMakeLists for Pose
+add_subdirectory(src/Pose)
 
-add_executable(cameracapture_node src/Vision/cameracapture_node.cpp)
-target_link_libraries(cameracapture_node ${OpenCV_LIBRARIES} ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} ${roscpp_LIBRARIES} logger resourcemonitor visionhelper)
+#Add CMakeLists for Sensors
+add_subdirectory(src/Sensor) 
 
-add_executable(pose_node src/Pose/pose_node.cpp)
-target_link_libraries(pose_node ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} ${roscpp_LIBRARIES} logger resourcemonitor pose_node_process)
-catkin_add_gtest(test_pose_node_process src/Pose/unit_tests/test_pose_node_process.cpp)
-target_link_libraries(test_pose_node_process ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} ${Eigen_LIBRARIES} pose_node_process logger)
+#Add CMakeLists for Timing
+add_subdirectory(src/Timing)
 
-add_executable(autodrive_node src/Control/autodrive_node.cpp)
-target_link_libraries(autodrive_node ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} ${roscpp_LIBRARIES} logger resourcemonitor autodrive_node_process)
-catkin_add_gtest(test_autodrive_node_process src/Control/unit_tests/test_autodrive_node_process.cpp)
-target_link_libraries(test_autodrive_node_process ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} autodrive_node_process logger)
+#Add CMakeLists for User Control
+add_subdirectory(src/User_Control)

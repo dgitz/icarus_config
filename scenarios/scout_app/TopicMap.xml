@@ -15,7 +15,7 @@
         </InputChannel>
         <Outputs>
             <OutputChannel>
-                <Type>icarus_rover_v2/pin</Type>
+                <Type>eros/pin</Type>
                 <Topic>/PanServo</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
                 <PinNumber>0</PinNumber>
@@ -41,7 +41,7 @@
         </InputChannel>
         <Outputs>
             <OutputChannel>
-                <Type>icarus_rover_v2/pin</Type>
+                <Type>eros/pin</Type>
                 <Topic>/TiltServo</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
                 <PinNumber>1</PinNumber>
@@ -67,7 +67,7 @@
         </InputChannel>
         <Outputs>
             <OutputChannel>
-                <Type>icarus_rover_v2/pin</Type>
+                <Type>eros/pin</Type>
                 <Topic>/LeftMotorController</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
                 <PinNumber>2</PinNumber>
@@ -78,7 +78,7 @@
                 <Deadband>0</Deadband>
             </OutputChannel>
             <OutputChannel>
-                <Type>icarus_rover_v2/pin</Type>
+                <Type>eros/pin</Type>
                 <Topic>/RightMotorController</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
                 <PinNumber>3</PinNumber>

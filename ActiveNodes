@@ -1,12 +1,4 @@
-Node:	dgitzdev_audio_node	Launched:	25/05/2019 07:52:44
-Node:	dgitzdev_calibration_node	Launched:	25/05/2019 07:52:44
-Node:	dgitzdev_command_node	Launched:	25/05/2019 07:52:44
-Node:	dgitzdev_datalogger_node	Launched:	25/05/2019 07:52:44
-Node:	dgitzdev_diagnostic_node	Launched:	25/05/2019 07:52:44
-Node:	dgitzdev_imu_node	Launched:	25/05/2019 07:52:44
-Node:	dgitzdev_master_node	Launched:	25/05/2019 07:52:44
-Node:	dgitzdev_networktransceiver_node	Launched:	25/05/2019 07:52:44
-Node:	dgitzdev_pose_node	Launched:	25/05/2019 07:52:44
-Node:	dgitzdev_timemaster_node	Launched:	25/05/2019 07:52:44
-Node:	dgitzdev_timeslave_node	Launched:	25/05/2019 07:52:44
-Node:	dgitzdev_topicremapper_node	Launched:	25/05/2019 07:52:44
+Node:	dgitzrosmaster_calibration_node	Launched:	26/05/2019 07:31:33
+Node:	dgitzrosmaster_command_node	Launched:	26/05/2019 07:31:33
+Node:	dgitzrosmaster_datalogger_node	Launched:	26/05/2019 07:31:33
+Node:	dgitzrosmaster_master_node	Launched:	26/05/2019 07:31:33

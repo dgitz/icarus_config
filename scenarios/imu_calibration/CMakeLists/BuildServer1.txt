@@ -188,32 +188,23 @@ add_library(serialmessage util/serialmessage.cpp)
 add_library(spimessage util/spimessage.cpp)
 add_library(i2cmessage util/i2cmessage.cpp)
 
-#Libraries-Drivers
-add_library(lcddriver src/Diagnostics/Driver/LCDDriver.cpp)
-add_library(terminalhatdriver src/Board/Driver/TerminalHatDriver.cpp) #Only compatible for armv7l
-add_library(gpiohatdriver src/Board/Driver/GPIOHatDriver.cpp) #Only compatible for armv7l
-add_library(servohatdriver src/Board/Driver/ServoHatDriver.cpp) #Only compatible for armv7l
+#Add CMakeLists for Templates
+add_subdirectory(src_templates)
 
 #Add CMakeLists for Board
 add_subdirectory(src/Board)
 
 #Add CMakeLists for Communication
 add_subdirectory(src/Communication)
-target_link_libraries(timemaster_node_process ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} )
-target_link_libraries(timeslave_node_process ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} )
-target_link_libraries(networktransceiver_node_process ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} )
-target_link_libraries(hatcontroller_node_process ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} )
 
 #Add CMakeLists for Control
 add_subdirectory(src/Control)
 
 #Add CMakeLists for Diagnostics
 add_subdirectory(src/Diagnostics)
-target_link_libraries(topicremapper_node_process ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} )
 
 #Add CMakeLists for Pose
 add_subdirectory(src/Pose)
-target_link_libraries(boardcontroller_node_process ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${TinyXML_LIBRARIES} )
 
 #Add CMakeLists for Sensors
 add_subdirectory(src/Sensor) 
@@ -223,6 +214,3 @@ add_subdirectory(src/Timing)
 
 #Add CMakeLists for User Control
 add_subdirectory(src/User_Control)
-
-#Add CMakeLists for Diagnostics
-add_subdirectory(src/Diagnostics)
