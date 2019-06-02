@@ -15,7 +15,6 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   sensor_msgs
   roslib
-  eros
 )
 
 ## System dependencies are found with CMake's conventions
@@ -179,7 +178,6 @@ install(DIRECTORY include/${PROJECT_NAME}/
 # catkin_add_nosetests(test)
 include_directories(include ${catkin_INCLUDE_DIRS} ${roscpp_INCLUDE_DIRS})
 #Libraries-General
-add_library(logger util/logger.cpp)
 add_library(resourcemonitor util/resourcemonitor.cpp)
 
 #Libraries-Communications

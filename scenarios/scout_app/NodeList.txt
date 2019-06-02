@@ -41,6 +41,7 @@ RunningNodes = {
 
 #User Control
     #"Audio_Node" => device["ControlModule1"]
+    "Sample_Node" => device["dgitzdev"]
 
     
 }
