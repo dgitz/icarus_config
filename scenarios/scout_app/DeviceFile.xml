@@ -62,6 +62,7 @@
         <PartNumber>110015</PartNumber>
         <DeviceName>RightIMU</DeviceName>
         <DeviceType>IMU</DeviceType>
+        <ID>3551284</ID>
     </Device>
     <Device>
         <ParentDevice>ControlModule1</ParentDevice>
