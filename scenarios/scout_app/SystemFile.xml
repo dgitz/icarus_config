@@ -21,14 +21,14 @@
             <pitch Units="degree">180.00</pitch>
             <yaw Units="degree">0.0</yaw>
         </LeverArm>
-        <LeverArm>
+        <LeverArm> <!-- Flat mount with standoffs -->
             <Name>RightIMU</Name>
             <ReferenceLeverArm>BodyOrigin</ReferenceLeverArm>
             <x Units="meter">0</x>
             <y Units="meter">0</y>
             <z Units="meter">0</z>
-            <roll Units="degree">0</roll>
-            <pitch Units="degree">0.0</pitch>
+            <roll Units="degree">0.2263</roll> 
+            <pitch Units="degree">-0.2243</pitch>
             <yaw Units="degree">0</yaw>
         </LeverArm>
         <LeverArm>
