@@ -28,6 +28,7 @@ RunningNodes = {
 
 #Sensors
     "IMU_Node" => device["ControlModule1"]
+    
 
 #Pose
     "Calibration_Node" => device["dgitzrosmaster"]

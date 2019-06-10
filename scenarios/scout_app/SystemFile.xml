@@ -27,8 +27,8 @@
             <x Units="meter">0</x>
             <y Units="meter">0</y>
             <z Units="meter">0</z>
-            <roll Units="degree">0.2263</roll> 
-            <pitch Units="degree">-0.2243</pitch>
+            <roll Units="degree">0</roll>  <!-- 0.2263 -->
+            <pitch Units="degree">0</pitch> <!---0.2243  -->
             <yaw Units="degree">0</yaw>
         </LeverArm>
         <LeverArm>
