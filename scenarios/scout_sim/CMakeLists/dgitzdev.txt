@@ -19,7 +19,6 @@ find_package(catkin REQUIRED COMPONENTS
   cv_bridge
   roslib
   tf
-  eros
   rosbag
 )
 
@@ -183,7 +182,6 @@ install(DIRECTORY include/${PROJECT_NAME}/
 # catkin_add_nosetests(test)
 include_directories(include ${catkin_INCLUDE_DIRS} ${roscpp_INCLUDE_DIRS})
 #Libraries-General
-add_library(logger util/logger.cpp)
 add_library(resourcemonitor util/resourcemonitor.cpp)
 
 #Libraries-Communications

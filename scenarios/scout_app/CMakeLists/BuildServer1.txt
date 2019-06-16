@@ -178,6 +178,7 @@ install(DIRECTORY include/${PROJECT_NAME}/
 # catkin_add_nosetests(test)
 include_directories(include ${catkin_INCLUDE_DIRS} ${roscpp_INCLUDE_DIRS})
 #Libraries-General
+add_library(logger util/logger.cpp)
 add_library(resourcemonitor util/resourcemonitor.cpp)
 
 #Libraries-Communications
@@ -185,6 +186,9 @@ add_library(udpmessage util/udpmessage.cpp)
 add_library(serialmessage util/serialmessage.cpp)
 add_library(spimessage util/spimessage.cpp)
 add_library(i2cmessage util/i2cmessage.cpp)
+
+#Add CMakeLists for Templates
+add_subdirectory(src_templates)
 
 #Add CMakeLists for Board
 add_subdirectory(src/Board)

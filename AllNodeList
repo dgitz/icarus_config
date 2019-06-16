@@ -1,6 +1,7 @@
-http://ControlModule1:34283/ 	/ControlModule1_imu_node
-http://ControlModule1:37477/ 	/ControlModule1_master_node
-http://ControlModule1:42075/ 	/ControlModule1_timemaster_node
-http://ControlModule1:46693/ 	/rosout
-http://dgitzrosmaster:36221/ 	/dgitzrosmaster_datalogger_node
-http://dgitzrosmaster:44165/ 	/dgitzrosmaster_master_node
+http://dgitzdev:36831/ 	/dgitzdev_navigation_node
+http://dgitzdev:42161/ 	/gazebo
+http://dgitzdev:42393/ 	/gazebo_gui
+http://dgitzdev:43009/ 	/dgitzdev_command_node
+http://dgitzdev:43707/ 	/dgitzdev_master_node
+http://dgitzdev:45747/ 	/rosout
+http://dgitzdev:45951/ 	/dgitzdev_diagnostic_node
