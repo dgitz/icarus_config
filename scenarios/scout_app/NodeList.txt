@@ -18,7 +18,7 @@ RunningNodes = {
     "Master_Node" => device["ControlModule2"]
     "Master_Node" => device["dgitzrosmaster"]
     "Master_Node" => device["dgitzdev"]
-    "Command_Node" => device["ControlModule1"]
+    #"Command_Node" => device["ControlModule1"]
     #"CommandLauncher_Node" => device["ControlModule1"] #Raspi Cam not starting!
 
 #Diagnostics
@@ -28,9 +28,10 @@ RunningNodes = {
 
 #Sensors
     "IMU_Node" => device["ControlModule1"]
+    
 
 #Pose
-    "Calibration_Node" => device["dgitzrosmaster"]
+    #"Calibration_Node" => device["dgitzrosmaster"]
     
 
 #Board and Hat

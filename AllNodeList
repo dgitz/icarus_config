@@ -1,11 +1,6 @@
-http://ControlModule1:33917/ 	/ControlModule1_imu_node
-http://ControlModule1:36215/ 	/rosout
-http://ControlModule1:37055/ 	/ControlModule1_timemaster_node
-http://ControlModule1:37223/ 	/ControlModule1_command_node
-http://ControlModule1:45465/ 	/ControlModule1_master_node
-http://ControlModule2:34013/ 	/ControlModule2_hatcontroller_node
-http://ControlModule2:34225/ 	/ControlModule2_boardcontroller_node
-http://ControlModule2:39457/ 	/ControlModule2_topicremapper_node
-http://ControlModule2:39691/ 	/ControlModule2_master_node
-http://ControlModule2:45141/ 	/ControlModule2_diagnostic_node
-http://dgitzdev:46839/ 	/task_monitor
+http://ControlModule1:34283/ 	/ControlModule1_imu_node
+http://ControlModule1:37477/ 	/ControlModule1_master_node
+http://ControlModule1:42075/ 	/ControlModule1_timemaster_node
+http://ControlModule1:46693/ 	/rosout
+http://dgitzrosmaster:36221/ 	/dgitzrosmaster_datalogger_node
+http://dgitzrosmaster:44165/ 	/dgitzrosmaster_master_node
