@@ -46,49 +46,15 @@
                 </geometry>
             </visual>
             
-            <visual name='left_imu'>
-                <pose>.3 0.3 0.3 0 0 0</pose>
-                <geometry>
-                    <box>
-                        <size>0.1 0.1 0.1</size>
-                    </box>
-                </geometry>
-            </visual>
-            <sensor type="imu" name="left_imu">
-                <always_on>1</always_on>
-                <update_rate>20.0</update_rate>
-                <pose>.3 0.3 0.3 0 0 0</pose>
-                <visualize>false</visualize>
-            </sensor>
-            <sensor type="magnetometer" name="left_imu_mag">
-                <always_on>1</always_on>
-                <update_rate>20.0</update_rate>
-                <pose>.3 0.3 0.3 0 0 0</pose>
-                <visualize>false</visualize>
-            </sensor>
 
-            <visual name='right_imu'>
-                <pose>-.3 0.3 0.3 0 0 0</pose>
-                <geometry>
-                    <box>
-                        <size>0.1 0.1 0.1</size>
-                    </box>
-                </geometry>
-            </visual>
-             <sensor type="imu" name="right_imu">
-                <always_on>1</always_on>
-                <update_rate>20.0</update_rate>
-                <pose>-.3 0.3 0.3 0 0 0</pose>
-                <visualize>false</visualize>
-            </sensor>
-            <sensor type="magnetometer" name="right_imu_mag">
-                <always_on>1</always_on>
-                <update_rate>20.0</update_rate>
-                <pose>.3 0.3 0.3 0 0 0</pose>
-                <visualize>false</visualize>
-            </sensor>
+
 
         </link>
+        <include>
+            <uri>model://110015-3551284</uri>
+            <name>RightIMU</name>
+            <pose>0 0 0 0 0 0</pose>
+        </include>
         <include>
             <uri>model://mid_wheel</uri>
             <name>midleft_wheel</name>
@@ -287,6 +253,10 @@
             </geometry>
             </visual>
         </link>
+        <joint type="fixed" name="base_rightimu">
+            <child>110015-3551284::RightIMU</child>
+            <parent>base</parent>
+        </joint>
         <joint type="revolute" name="drivetrain_frontleft_wheel_joint">
             <pose frame=''>0 0 0 0 0 0</pose>
             <child>frontleft_wheel::large_wheel</child>
