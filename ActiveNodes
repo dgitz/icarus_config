@@ -1,2 +1,6 @@
-Node:	dgitzrosmaster_datalogger_node	Launched:	15/06/2019 09:00:30
-Node:	dgitzrosmaster_master_node	Launched:	15/06/2019 09:00:30
+Node:	dgitzdev_diagnostic_node	Launched:	22/06/2019 05:32:07
+Node:	dgitzdev_command_node	Launched:	22/06/2019 05:32:07
+Node:	gazebo_gui	Launched:	22/06/2019 05:32:07
+Node:	dgitzdev_master_node	Launched:	22/06/2019 05:32:07
+Node:	dgitzdev_navigation_node	Launched:	22/06/2019 05:32:07
+Node:	gazebo	Launched:	22/06/2019 05:32:07

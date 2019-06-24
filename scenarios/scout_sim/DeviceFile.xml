@@ -17,6 +17,19 @@
     <Device>
         <ParentDevice>None</ParentDevice>
         <PartNumber>UNKNOWN</PartNumber>
+        <DeviceName>dgitzdev</DeviceName>
+        <DeviceType>ComputeModule</DeviceType>
+        <PrimaryIP>10.0.0.90</PrimaryIP>
+        <Architecture>x86_64</Architecture>
+        <ID>2</ID>
+        <Capability>ROS</Capability>
+        <BoardCount>0</BoardCount>
+        <HatCount>0</HatCount>
+        <SensorCount>0</SensorCount>
+    </Device>
+    <Device>
+        <ParentDevice>None</ParentDevice>
+        <PartNumber>UNKNOWN</PartNumber>
         <DeviceName>BuildServer1</DeviceName>
         <DeviceType>BuildServer</DeviceType>
         <PrimaryIP>10.0.0.179</PrimaryIP>
@@ -46,9 +59,10 @@
     </Device>
     <Device>
         <ParentDevice>ControlModule1</ParentDevice>
-        <PartNumber>110012</PartNumber>
+        <PartNumber>110015</PartNumber>
         <DeviceName>RightIMU</DeviceName>
         <DeviceType>IMU</DeviceType>
+        <ID>3551284</ID>
     </Device>
     <Device>
         <ParentDevice>ControlModule1</ParentDevice>
@@ -75,10 +89,10 @@
         <Capability>GPIO</Capability>
         <ID>64</ID>
         <BoardCount>0</BoardCount>
-        <PinCount>5</PinCount>
+        <PinCount>4</PinCount>
         <Pin>
             <Name>PanServo</Name>
-            <Number>4</Number>
+            <Number>0</Number>
             <Function>PWMOutput-NonActuator</Function>
             <ConnectedDevice>PanServo</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
@@ -86,17 +100,8 @@
             <MinValue>1000</MinValue>
         </Pin>
         <Pin>
-            <Name>RollServo</Name>
-            <Number>5</Number>
-            <Function>PWMOutput-NonActuator</Function>
-            <ConnectedDevice>RollServo</ConnectedDevice>
-            <DefaultValue>1500</DefaultValue>
-			<MaxValue>2000</MaxValue>
-            <MinValue>1000</MinValue>
-        </Pin>
-        <Pin>
             <Name>TiltServo</Name>
-            <Number>6</Number>
+            <Number>1</Number>
             <Function>PWMOutput-NonActuator</Function>
             <ConnectedDevice>TiltServo</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
@@ -187,7 +192,7 @@
     </Device>
      <Device>
         <ParentDevice>ControlModule2</ParentDevice>
-        <PartNumber>110012</PartNumber>
+        <PartNumber>110015</PartNumber>
         <DeviceName>LeftIMU</DeviceName>
         <DeviceType>IMU</DeviceType>
     </Device>

@@ -132,7 +132,7 @@
         </InputChannel>
         <Outputs>
             <OutputChannel>
-                <Type>icarus_rover_v2/pin</Type>
+                <Type>eros/pin</Type>
                 <Topic>/ControlModule1_boardcontroller_node/PWMOutput</Topic>
                 <ParentDevice>ServoHat1</ParentDevice>
                 <PinNumber>0</PinNumber>
@@ -181,7 +181,7 @@
         <Outputs>
             <OutputChannel>
 			    <Name>DriveMotor</Name>
-                <Type>icarus_rover_v2/pin</Type>
+                <Type>eros/pin</Type>
                 <Topic>/ControlModule1_boardcontroller_node/PWMOutput</Topic>
                 <ParentDevice>ServoHat1</ParentDevice>
                 <PinNumber>1</PinNumber>
@@ -223,7 +223,7 @@
         </InputChannel>
         <Outputs>
             <OutputChannel>
-                <Type>icarus_rover_v2/pin</Type>
+                <Type>eros/pin</Type>
                 <Topic>/ControlModule2_hatcontroller_node/DigitalOutput</Topic>
                 <ParentDevice>ServoHat1</ParentDevice>
                 <PinNumber>1</PinNumber>
