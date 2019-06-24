@@ -11,12 +11,12 @@ RunningNodes = {
     #Communications
 
 #Control
-    "Master_Node" => device["dgitzdev"]
-    "Command_Node" => device["dgitzdev"]
-    "Navigation_Node" => device["dgitzdev"]
+    #"Master_Node" => device["dgitzdev"]
+    #"Command_Node" => device["dgitzdev"]
+    #"Navigation_Node" => device["dgitzdev"]
 
 #Diagnostics
-    "Diagnostic_Node" => device["dgitzdev"]
+    #"Diagnostic_Node" => device["dgitzdev"]
 
 #Sensors
 
