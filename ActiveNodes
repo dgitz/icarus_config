@@ -1,6 +1,6 @@
-Node:	gazebo	Launched:	22/06/2019 03:06:23
-Node:	dgitzdev_navigation_node	Launched:	22/06/2019 03:06:23
-Node:	gazebo_gui	Launched:	22/06/2019 03:06:23
-Node:	dgitzdev_diagnostic_node	Launched:	22/06/2019 03:06:23
-Node:	dgitzdev_command_node	Launched:	22/06/2019 03:06:23
-Node:	dgitzdev_master_node	Launched:	22/06/2019 03:06:23
+Node:	dgitzdev_diagnostic_node	Launched:	22/06/2019 05:32:07
+Node:	dgitzdev_command_node	Launched:	22/06/2019 05:32:07
+Node:	gazebo_gui	Launched:	22/06/2019 05:32:07
+Node:	dgitzdev_master_node	Launched:	22/06/2019 05:32:07
+Node:	dgitzdev_navigation_node	Launched:	22/06/2019 05:32:07
+Node:	gazebo	Launched:	22/06/2019 05:32:07

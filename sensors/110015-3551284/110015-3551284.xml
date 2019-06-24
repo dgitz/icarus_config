@@ -13,7 +13,7 @@
             <X>
                 <Mean>0.0</Mean> <!-- Assume calibrated out -->
                 <StdDev>0.014622</StdDev>
-                <Precision>7.4505e-09</Precision>  <!-- (2*9.81)/(2^15), verify with analysis -->
+                <Precision>0.000598755</Precision>  <!-- (2*9.81)/(2^15), verify with analysis -->
             </X>
             <Y>
                 <Mean>0.0</Mean> <!-- Assume calibrated out -->
