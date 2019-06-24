@@ -2,7 +2,7 @@
 #Always Running Section
 #Use a pound sign for comments
 AlwaysOnNodes = {
-    "TimeMaster_Node" => device["dgitzdev"]
+    "TimeMaster_Node" => device["dgitzrosmaster"]
     #Communications
 }
 #Normal Running Section
@@ -11,12 +11,12 @@ RunningNodes = {
     #Communications
 
 #Control
-    "Master_Node" => device["dgitzdev"]
-    "Command_Node" => device["dgitzdev"]
-    "Navigation_Node" => device["dgitzdev"]
+    "Master_Node" => device["dgitzrosmaster"]
+    "Command_Node" => device["dgitzrosmaster"]
+    "Navigation_Node" => device["dgitzrosmaster"]
 
 #Diagnostics
-    "Diagnostic_Node" => device["dgitzdev"]
+    "Diagnostic_Node" => device["dgitzrosmaster"]
 
 #Sensors
 
