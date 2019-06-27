@@ -16,7 +16,8 @@ RunningNodes = {
     "Navigation_Node" => device["dgitzrosmaster"]
 
 #Diagnostics
-    "Diagnostic_Node" => device["dgitzrosmaster"]
+    #"Diagnostic_Node" => device["dgitzrosmaster"]
+    "DataLogger_Node" => device["dgitzrosmaster"]
 
 #Sensors
 
