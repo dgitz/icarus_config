@@ -197,6 +197,18 @@
         <DeviceType>IMU</DeviceType>
     </Device>
     <Device>
+        <ParentDevice>ArduinoBoard1</ParentDevice>
+        <PartNumber>110003</PartNumber>
+        <DeviceName>LeftEncoder</DeviceName>
+        <DeviceType>Encoder</DeviceType>
+    </Device>
+    <Device>
+        <ParentDevice>ArduinoBoard1</ParentDevice>
+        <PartNumber>110003</PartNumber>
+        <DeviceName>RightEncoder</DeviceName>
+        <DeviceType>Encoder</DeviceType>
+    </Device>
+    <Device>
         <ParentDevice>ControlModule2</ParentDevice>
         <PartNumber>100005</PartNumber>
         <DeviceName>ArduinoBoard1</DeviceName>
