@@ -1,7 +1,6 @@
-http://dgitzdev:33007/ 	/dgitzdev_diagnostic_node
-http://dgitzdev:35579/ 	/dgitzdev_command_node
-http://dgitzdev:40141/ 	/gazebo_gui
-http://dgitzdev:41321/ 	/dgitzdev_master_node
-http://dgitzdev:43229/ 	/dgitzdev_navigation_node
-http://dgitzdev:45429/ 	/rosout
-http://dgitzdev:46149/ 	/gazebo
+http://dgitzdev:34617/ 	/dgitzdev_navigation_node
+http://dgitzdev:35129/ 	/dgitzdev_master_node
+http://dgitzdev:42383/ 	/gazebo
+http://dgitzdev:42459/ 	/gazebo_gui
+http://dgitzdev:44029/ 	/rosout
+http://dgitzdev:44855/ 	/dgitzdev_datalogger_node
