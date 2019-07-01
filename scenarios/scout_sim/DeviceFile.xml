@@ -2,6 +2,13 @@
 <DeviceListFile>
   <DeviceList>
     <Device>
+        <ParentDevice>ControlModule2</ParentDevice>
+        <PartNumber>555005</PartNumber>
+        <DeviceName>MainBattery</DeviceName>
+        <DeviceType>Battery</DeviceType>
+        <ID>0</ID>
+    </Device>
+    <Device>
         <ParentDevice>None</ParentDevice>
         <PartNumber>UNKNOWN</PartNumber>
         <DeviceName>dgitzrosmaster</DeviceName>
