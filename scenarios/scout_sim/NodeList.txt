@@ -15,6 +15,7 @@ RunningNodes = {
     "Master_Node" => device["dgitzrosmaster"]
     #"Command_Node" => device["dgitzdev"]
     #"Navigation_Node" => device["dgitzdev"]
+    "Implement_Node" => device["ControlModule1"]
 
 #Diagnostics
     "Diagnostic_Node" => device["ControlModule2"]
