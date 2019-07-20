@@ -18,7 +18,7 @@ RunningNodes = {
     "Implement_Node" => device["ControlModule1"]
 
 #Diagnostics
-    #"Diagnostic_Node" => device["dgitzrosmaster"]
+    "Diagnostic_Node" => device["ControlModule2"]
     "DataLogger_Node" => device["dgitzrosmaster"]
 
 #Sensors
