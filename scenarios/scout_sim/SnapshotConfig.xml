@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<SnapshotConfigFile>
+    <SnapshotConfig>
+        <Architecture type="x86_64">
+            <SnapshotPath>/home/robot/storage/SNAPSHOT/</SnapshotPath>
+            <Folder>/home/robot/logs/output/</Folder>
+            <File>/var/log/syslog</File>
+            <File>/var/log/boot.log</File>
+            <File>/var/log/kern.log</File>
+        </Architecture>
+        <Architecture type="armv7l">
+            <SnapshotPath>/home/robot/storage/SNAPSHOT/</SnapshotPath>
+            <Folder>/home/robot/logs/output/</Folder>
+            <File>/var/log/syslog</File>
+            <File>/var/log/boot.log</File>
+            <File>/var/log/kern.log</File>
+        </Architecture>
+    </SnapshotConfig>
+</SnapshotConfigFile>

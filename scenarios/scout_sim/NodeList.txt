@@ -20,6 +20,8 @@ RunningNodes = {
 #Diagnostics
     "Diagnostic_Node" => device["ControlModule2"]
     "DataLogger_Node" => device["dgitzrosmaster"]
+    "SnapshotMaster_Node" => device["dgitzdev"]
+
 
 #Sensors
     
