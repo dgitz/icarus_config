@@ -1,19 +1,52 @@
 <?xml version="1.0" ?>
 <SnapshotConfigFile>
     <SnapshotConfig>
+        <DataLog>
+            <StorageDirectory>/home/robot/storage/DATALOGS/</StorageDirectory>
+            <Device>dgitzdev</Device>
+        </DataLog>
+        <SystemSnapshotPath>/home/robot/storage/SNAPSHOT/SYSTEMSNAPSHOT/</SystemSnapshotPath>
         <Architecture type="x86_64">
-            <SnapshotPath>/home/robot/storage/SNAPSHOT/</SnapshotPath>
+            <DeviceSnapshotPath>/home/robot/storage/SNAPSHOT/DEVICESNAPSHOT/</DeviceSnapshotPath>
+            <Command file="ps_log">ps aux</Command>
+            <Command file="ifconfig_log">ifconfig</Command>
+            <Command file="rosnode_list">rosnode list</Command>
+            <Command file="rostopic_list">rostopic list</Command>
+            <Command file="top_log">top -bn1</Command>
+            <Command file="diskfree">df -h</Command>
+            <Command file="free_ram">free -m</Command>
+            <Command file="dev_scan">ls -l /dev/</Command>
+            <Command file="systemctl_status">systemctl -al</Command>
+            <Command file="uname">uname -a</Command>
+            <Command file="uptime">uptime</Command>
+            <Command file="ntp_status">ntpq -p</Command>
+            <Command file="lsmod">lsmod</Command>
             <Folder>/home/robot/logs/output/</Folder>
+            <Folder>/home/robot/config/</Folder>
             <File>/var/log/syslog</File>
             <File>/var/log/boot.log</File>
             <File>/var/log/kern.log</File>
         </Architecture>
         <Architecture type="armv7l">
-            <SnapshotPath>/home/robot/storage/SNAPSHOT/</SnapshotPath>
+            <DeviceSnapshotPath>/home/robot/storage/SNAPSHOT/DEVICESNAPSHOT/</DeviceSnapshotPath>
+            <Command file="ps_log">ps aux</Command>
+            <Command file="ifconfig_log">ifconfig</Command>
+            <Command file="rosnode_list">rosnode list</Command>
+            <Command file="rostopic_list">rostopic list</Command>
+            <Command file="top_log">top -bn1</Command>
+            <Command file="diskfree">df -T</Command>
+            <Command file="free_ram">free -m</Command>
+            <Command file="i2c_scan">i2cdetect -y 1</Command>
+            <Command file="dev_scan">ls -l /dev/</Command>
+            <Command file="systemctl_status">systemctl -al</Command>
+            <Command file="uname">uname -a</Command>
+            <Command file="uptime">uptime</Command>
+            <Command file="ntp_status">ntpq -p</Command>
+            <Command file="lsmod">lsmod</Command>
             <Folder>/home/robot/logs/output/</Folder>
-            <File>/var/log/syslog</File>
-            <File>/var/log/boot.log</File>
-            <File>/var/log/kern.log</File>
+            <Folder>/home/robot/config/</Folder>
+            <File>/var/log/bootstrap.log</File>
+            <File>/boot/config.txt</File>
         </Architecture>
     </SnapshotConfig>
 </SnapshotConfigFile>

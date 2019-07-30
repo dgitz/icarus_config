@@ -2,26 +2,26 @@
 #Always Running Section
 #Use a pound sign for comments
 AlwaysOnNodes = {
-    "TimeMaster_Node" => device["dgitzrosmaster"]
+    #"TimeMaster_Node" => device["dgitzrosmaster"]
+    "TimeMaster_Node" => device["dgitzdev"]
     #Communications
 }
 #Normal Running Section
 RunningNodes = {
     #Timing
     #Communications
+    "NetworkTransceiver_Node" => device["dgitzdev"]
 
 #Control
     "Master_Node" => device["dgitzdev"]
-    "Master_Node" => device["dgitzrosmaster"]
-    #"Command_Node" => device["dgitzdev"]
-    #"Navigation_Node" => device["dgitzdev"]
-    "Implement_Node" => device["ControlModule1"]
+    "Master_Node" => device["ControlModule1"]
+    "Master_Node" => device["ControlModule2"]
 
 #Diagnostics
-    "Diagnostic_Node" => device["ControlModule2"]
-    "DataLogger_Node" => device["dgitzrosmaster"]
     "SnapshotMaster_Node" => device["dgitzdev"]
-
+    "SnapshotSlave_Node" => device["ControlModule1"]
+    "SnapshotSlave_Node" => device["ControlModule2"]
+    "DataLogger_Node" => device["dgitzdev"]
 
 #Sensors
     
