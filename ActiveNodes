@@ -1,4 +1,4 @@
-Node:	gazebo_gui	Launched:	29/06/2019 09:42:40
-Node:	gazebo	Launched:	29/06/2019 09:42:40
-Node:	dgitzdev_navigation_node	Launched:	29/06/2019 09:42:40
-Node:	dgitzdev_command_node	Launched:	29/06/2019 09:42:40
+Node:	dgitzdev_snapshot_node	Launched:	30/07/2019 07:00:03
+Node:	dgitzdev_datalogger_node	Launched:	30/07/2019 07:00:03
+Node:	dgitzdev_networktransceiver_node	Launched:	30/07/2019 07:00:03
+Node:	dgitzdev_master_node	Launched:	30/07/2019 07:00:03

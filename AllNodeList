@@ -1,6 +1,9 @@
-http://dgitzdev:36539/ 	/gazebo_gui
-http://dgitzdev:37545/ 	/gazebo
-http://dgitzdev:38227/ 	/rosout
-http://dgitzdev:43733/ 	/dgitzdev_navigation_node
-http://dgitzdev:44449/ 	/dgitzdev_command_node
-http://dgitzdev:46059/ 	/rosout
+http://ControlModule1:37113/ 	/rosout
+http://ControlModule1:40595/ 	/ControlModule1_master_node
+http://ControlModule1:46447/ 	/ControlModule1_snapshot_node
+http://ControlModule2:35779/ 	/ControlModule2_master_node
+http://ControlModule2:40873/ 	/ControlModule2_snapshot_node
+http://dgitzdev:33427/ 	/dgitzdev_snapshot_node
+http://dgitzdev:33979/ 	/dgitzdev_datalogger_node
+http://dgitzdev:46739/ 	/dgitzdev_networktransceiver_node
+http://dgitzdev:46763/ 	/dgitzdev_master_node
