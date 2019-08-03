@@ -1,9 +1,7 @@
-http://ControlModule1:37113/ 	/rosout
-http://ControlModule1:40595/ 	/ControlModule1_master_node
-http://ControlModule1:46447/ 	/ControlModule1_snapshot_node
-http://ControlModule2:35779/ 	/ControlModule2_master_node
-http://ControlModule2:40873/ 	/ControlModule2_snapshot_node
-http://dgitzdev:33427/ 	/dgitzdev_snapshot_node
-http://dgitzdev:33979/ 	/dgitzdev_datalogger_node
-http://dgitzdev:46739/ 	/dgitzdev_networktransceiver_node
-http://dgitzdev:46763/ 	/dgitzdev_master_node
+http://ControlModule1:39721/ 	/ControlModule1_snapshot_node
+http://ControlModule1:45681/ 	/ControlModule1_master_node
+http://ControlModule1:46043/ 	/rosout
+http://ControlModule2:35837/ 	/ControlModule2_snapshot_node
+http://ControlModule2:44795/ 	/ControlModule2_master_node
+http://dgitzdev:34121/ 	/rostopic_32037_1564827118415
+http://dgitzdev:46799/ 	/dgitzdev_master_node
