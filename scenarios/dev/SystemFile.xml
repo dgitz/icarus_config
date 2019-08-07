@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<SystemFile>
+    <LeverArmList>
+        <LeverArm>
+            <Name>Encoder1</Name>
+            <ReferenceLeverArm>BodyOrigin</ReferenceLeverArm>
+            <x Units="meter">.1</x>
+            <y Units="meter">0.2</y>
+            <z Units="meter">0.3</z>
+            <roll Units="degree">20.0</roll>
+            <pitch Units="degree">30.0</pitch>
+            <yaw Units="degree">80.0</yaw>
+        </LeverArm>
+        <LeverArm>
+            <Name>LeftIMU</Name>
+            <ReferenceLeverArm>BodyOrigin</ReferenceLeverArm>
+            <x Units="meter">0</x>
+            <y Units="meter">0</y>
+            <z Units="meter">0</z>
+            <roll Units="degree">0.0</roll>
+            <pitch Units="degree">180.00</pitch>
+            <yaw Units="degree">0.0</yaw>
+        </LeverArm>
+        <LeverArm> <!-- Offset mount with standoffs -->
+            <Name>RightIMU</Name>
+            <ReferenceLeverArm>BodyOrigin</ReferenceLeverArm>
+            <x Units="meter">0</x>
+            <y Units="meter">0</y>
+            <z Units="meter">0</z>
+            <roll Units="degree">0.2271</roll>  <!-- 0.2263 -->
+            <pitch Units="degree">-0.2249</pitch> <!---0.2243  -->
+            <yaw Units="degree">0</yaw>
+        </LeverArm>
+        <LeverArm>
+            <Name>Truth1</Name>
+            <ReferenceLeverArm>BodyOrigin</ReferenceLeverArm>
+            <x Units="meter">0</x>
+            <y Units="meter">0</y>
+            <z Units="meter">0</z>
+            <roll Units="degree">0</roll>
+            <pitch Units="degree">0</pitch>
+            <yaw Units="degree">0</yaw>
+        </LeverArm>
+    </LeverArmList>
+</SystemFile>
