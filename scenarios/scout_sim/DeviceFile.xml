@@ -2,12 +2,21 @@
 <DeviceListFile>
   <DeviceList>
     <Device>
+        <ParentDevice>None</ParentDevice>
+        <PartNumber>100003</PartNumber>
+        <DeviceName>MasterModule</DeviceName>
+        <DeviceType>MasterModule</DeviceType>
+        <PrimaryIP>10.0.0.4</PrimaryIP>
+        <Architecture>armv7l</Architecture>
+    </Device>
+    <Device>
         <ParentDevice>ControlModule2</ParentDevice>
         <PartNumber>555005</PartNumber>
         <DeviceName>MainBattery</DeviceName>
         <DeviceType>Battery</DeviceType>
         <ID>0</ID>
     </Device>
+    <!--
     <Device>
         <ParentDevice>None</ParentDevice>
         <PartNumber>UNKNOWN</PartNumber>
@@ -21,6 +30,7 @@
         <HatCount>0</HatCount>
         <SensorCount>0</SensorCount>
     </Device>
+    -->
     <Device>
         <ParentDevice>None</ParentDevice>
         <PartNumber>UNKNOWN</PartNumber>

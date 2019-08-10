@@ -13,8 +13,8 @@ AlwaysOnNodes = {
 RunningNodes = {
 
 #Timing
-    "TimeMaster_Node" => device["ControlModule1"]
-    #"TimeSlave_Node" => device["dgitzdev"]
+    "TimeMaster_Node" => device["dgitzdev"]
+    "TimeSlave_Node" => device["ControlModule1"]
     "TimeSlave_Node" => device["ControlModule2"]
 
 #Communications
