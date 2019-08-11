@@ -1,0 +1,1 @@
+/home/robot/config/scenarios/dev/NodeList.txt
