@@ -20,19 +20,20 @@ RunningNodes = {
 #Communications
     "NetworkTransceiver_Node" => device["ControlModule2"]
     "TopicRemapper_Node" => device["ControlModule2"]
+    "Database_Node"         => device["dgitzdev"]
 
 #Control
-    "Command_Node" => device["dgitzdev"]
+    #"Command_Node" => device["dgitzdev"]
     "Master_Node" => device["dgitzdev"]
     "Master_Node" => device["ControlModule1"]
     "Master_Node" => device["ControlModule2"]
 
 #Diagnostics
-    "SnapshotMaster_Node" => device["dgitzdev"]
+    #"SnapshotMaster_Node" => device["dgitzdev"]
     "SnapshotSlave_Node" => device["ControlModule1"]
     "SnapshotSlave_Node" => device["ControlModule2"]
-    "DataLogger_Node" => device["dgitzdev"]
-    "Diagnostic_Node" => device["dgitzdev"]
+    #"DataLogger_Node" => device["dgitzdev"]
+    #"Diagnostic_Node" => device["dgitzdev"]
 
 #Sensors
     #"IMU_Node" => device["ControlModule1"]

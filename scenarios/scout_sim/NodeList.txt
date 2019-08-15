@@ -20,6 +20,7 @@ RunningNodes = {
 #Communications
     "NetworkTransceiver_Node" => device["ControlModule2"]
     "TopicRemapper_Node" => device["ControlModule2"]
+    "Database_Node"         => device["dgitzdev"]
 
 #Control
     "Command_Node" => device["dgitzdev"]
