@@ -24,9 +24,10 @@ RunningNodes = {
 
 #Control
     #"Command_Node" => device["dgitzdev"]
+    "ControlGroup_Node" => device["dgitzdev"]
     "Master_Node" => device["dgitzdev"]
-    "Master_Node" => device["ControlModule1"]
-    "Master_Node" => device["ControlModule2"]
+    #"Master_Node" => device["ControlModule1"]
+    #"Master_Node" => device["ControlModule2"]
 
 #Diagnostics
     #"SnapshotMaster_Node" => device["dgitzdev"]

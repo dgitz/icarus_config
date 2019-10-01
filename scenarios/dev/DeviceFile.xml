@@ -106,10 +106,9 @@
         <Capability>GPIO</Capability>
         <ID>64</ID>
         <BoardCount>0</BoardCount>
-        <PinCount>4</PinCount>
+        <PinCount>6</PinCount>
         <Pin>
-            <Name>PanServo</Name>
-            <Number>0</Number>
+            <Name>CH0</Name>
             <Function>PWMOutput-NonActuator</Function>
             <ConnectedDevice>PanServo</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
@@ -117,8 +116,7 @@
             <MinValue>1000</MinValue>
         </Pin>
         <Pin>
-            <Name>TiltServo</Name>
-            <Number>1</Number>
+            <Name>CH1</Name>
             <Function>PWMOutput-NonActuator</Function>
             <ConnectedDevice>TiltServo</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
@@ -126,8 +124,7 @@
             <MinValue>1000</MinValue>
         </Pin>
         <Pin>
-            <Name>LeftMotorController</Name>
-            <Number>2</Number>
+            <Name>CH2</Name>
             <Function>PWMOutput</Function>
             <ConnectedDevice>LeftMotorController</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
@@ -135,10 +132,25 @@
             <MinValue>1000</MinValue>
         </Pin>
         <Pin>
-            <Name>RightMotorController</Name>
-            <Number>3</Number>
+            <Name>CH3</Name>
             <Function>PWMOutput</Function>
             <ConnectedDevice>RightMotorController</ConnectedDevice>
+            <DefaultValue>1500</DefaultValue>
+			<MaxValue>2000</MaxValue>
+            <MinValue>1000</MinValue>
+        </Pin>
+        <Pin>
+            <Name>CH4</Name>
+            <Function>PWMOutput</Function>
+            <ConnectedDevice>LeftRightCylinderCommand</ConnectedDevice>
+            <DefaultValue>1500</DefaultValue>
+			<MaxValue>2000</MaxValue>
+            <MinValue>1000</MinValue>
+        </Pin>
+        <Pin>
+            <Name>CH5</Name>
+            <Function>PWMOutput</Function>
+            <ConnectedDevice>ImplementCylinderCommand</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
 			<MaxValue>2000</MaxValue>
             <MinValue>1000</MinValue>
@@ -273,31 +285,27 @@
         <PinCount>4</PinCount>
         <SensorCount>4</SensorCount>
         <Pin>
-            <Number>0</Number>
             <Function>UltraSonicSensorInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>FLSonar</Name>
+            <Name>PC6</Name>
             <ConnectedSensor>FLSonar</ConnectedSensor>
         </Pin>
         <Pin>
-            <Number>1</Number>
             <Function>UltraSonicSensorInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>FRSonar</Name>
+            <Name>PB7</Name>
             <ConnectedSensor>FRSonar</ConnectedSensor>
         </Pin>
         <Pin>
-            <Number>2</Number>
             <Function>UltraSonicSensorInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>BLSonar</Name>
+            <Name>PE6</Name>
             <ConnectedSensor>BLSonar</ConnectedSensor>
         </Pin>
         <Pin>
-            <Number>3</Number>
             <Function>UltraSonicSensorInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>BRSonar</Name>
+            <Name>PB4</Name>
             <ConnectedSensor>BRSonar</ConnectedSensor>
         </Pin>
     </Device>
