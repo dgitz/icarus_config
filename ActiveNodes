@@ -1,4 +1,8 @@
-Node:	dgitzdev_master_node	Launched:	30/09/2019 05:47:54
-Node:	dgitzdev_timemaster_node	Launched:	30/09/2019 05:47:54
-Node:	dgitzdev_controlgroup_node	Launched:	30/09/2019 05:47:54
-Node:	dgitzdev_database_node	Launched:	30/09/2019 05:47:54
+Node:	dgitzdev_timemaster_node	Launched:	30/09/2019 10:06:07
+Node:	dgitzdev_master_node	Launched:	30/09/2019 10:06:07
+Node:	dgitzdev_database_node	Launched:	30/09/2019 10:06:07
+Node:	dgitzdev_diagnostic_node	Launched:	30/09/2019 10:06:07
+Node:	dgitzdev_snapshot_node	Launched:	30/09/2019 10:06:07
+Node:	rqt_gui_py_node_11356	Launched:	30/09/2019 10:06:07
+Node:	dgitzdev_controlgroup_node	Launched:	30/09/2019 10:06:07
+Node:	dgitzdev_datalogger_node	Launched:	30/09/2019 10:06:07

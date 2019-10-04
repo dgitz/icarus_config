@@ -1,5 +1,9 @@
-http://dgitzdev:33957/ 	/dgitzdev_master_node
-http://dgitzdev:35217/ 	/dgitzdev_timemaster_node
-http://dgitzdev:38161/ 	/dgitzdev_controlgroup_node
-http://dgitzdev:38435/ 	/dgitzdev_database_node
+http://dgitzdev:35505/ 	/dgitzdev_timemaster_node
+http://dgitzdev:36671/ 	/dgitzdev_master_node
+http://dgitzdev:37107/ 	/dgitzdev_database_node
+http://dgitzdev:37683/ 	/dgitzdev_diagnostic_node
+http://dgitzdev:37903/ 	/dgitzdev_snapshot_node
+http://dgitzdev:38697/ 	/rqt_gui_py_node_11356
+http://dgitzdev:44301/ 	/dgitzdev_controlgroup_node
+http://dgitzdev:46441/ 	/dgitzdev_datalogger_node
 http://MasterModule:35581/ 	/rosout
