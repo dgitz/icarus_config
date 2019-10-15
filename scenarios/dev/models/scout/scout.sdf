@@ -97,7 +97,7 @@
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </limit>
-                    <suspension>fbuc
+                    <suspension>
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </suspension>
@@ -486,7 +486,6 @@
                 </geometry>
             </visual>
         </link>
-        
         <link name="implementcylinder_base">
             <pose>.17783 0 0.10804 3.14159 -0.842993317 0</pose>
             <inertial>
@@ -709,36 +708,8 @@
             </visual>
         </link>
         <!-- Left Lift Arm Joints -->
-        <joint type="revolute" name="left_liftarm_bellcrank_joint">
-            <child>left_liftarm</child>
-            <parent>bellcrank</parent>
-            <axis>
-                <xyz>0 1 0</xyz>
-            </axis>
-        </joint>
-         <joint type="revolute" name="left_liftarm_base_joint">
-            <pose>0 0 0 0 0 0</pose>
-            <child>left_liftarm</child>
-            <parent>base</parent>
-            <axis>
-                <xyz>0 1 0</xyz>
-                <dynamics>
-                    <friction>0.2</friction>
-                </dynamics>
-            </axis>
-            <physics>
-                <ode>
-                    <limit>
-                        <cfm>0</cfm>
-                        <erp>0.2</erp>
-                    </limit>
-                    <suspension>fbuc
-                        <cfm>0</cfm>
-                        <erp>0.2</erp>
-                    </suspension>
-                </ode>
-            </physics>
-        </joint>
+        
+         
         <joint type="revolute" name="left_liftcylinder_cylinder_joint">
             <pose>0 0 0 0 0 0</pose>
             <child>left_liftcylinder_cylinder</child>
@@ -755,7 +726,7 @@
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </limit>
-                    <suspension>fbuc
+                    <suspension>
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </suspension>
@@ -778,14 +749,20 @@
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </limit>
-                    <suspension>fbuc
+                    <suspension>
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </suspension>
                 </ode>
             </physics>
         </joint>
-       
+       <joint type="revolute" name="left_liftarm_bellcrank_joint">
+            <child>left_liftarm</child>
+            <parent>bellcrank</parent>
+            <axis>
+                <xyz>0 1 0</xyz>
+            </axis>
+        </joint>
         <joint type="revolute" name="left_liftarm_bucket_joint">
             <pose>0 0 0 0 0 0</pose>
             <child>bucket</child>
@@ -802,7 +779,7 @@
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </limit>
-                    <suspension>fbuc
+                    <suspension>
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </suspension>
@@ -810,29 +787,7 @@
             </physics>
         </joint>
         <!-- Right Lift Arm Joints -->
-        <joint type="revolute" name="right_liftarm_bucket_joint">
-            <pose>0 0 0 0 0 0</pose>
-            <child>bucket</child>
-            <parent>right_liftarm</parent>
-            <axis>
-                <xyz>0 1 0</xyz>
-                <dynamics>
-                    <friction>0.2</friction>
-                </dynamics>
-            </axis>
-            <physics>
-                <ode>
-                    <limit>
-                        <cfm>0</cfm>
-                        <erp>0.2</erp>
-                    </limit>
-                    <suspension>fbuc
-                        <cfm>0</cfm>
-                        <erp>0.2</erp>
-                    </suspension>
-                </ode>
-            </physics>
-        </joint>
+        
         <joint type="revolute" name="right_liftarm_base_joint">
             <pose>0 0 0 0 0 0</pose>
             <child>right_liftarm</child>
@@ -849,7 +804,7 @@
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </limit>
-                    <suspension>fbuc
+                    <suspension>
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </suspension>
@@ -872,7 +827,7 @@
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </limit>
-                    <suspension>fbuc
+                    <suspension>
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </suspension>
@@ -895,47 +850,57 @@
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </limit>
-                    <suspension>fbuc
+                    <suspension>
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </suspension>
                 </ode>
             </physics>
         </joint>
-        <joint type="prismatic" name="left_liftcylinder_prism">
-            <pose>0 0 0 0 0 0</pose>
-            <child>left_liftcylinder_cylinder</child>
-            <parent>left_liftcylinder_base</parent>
-            <axis>
-                <xyz>1 0 0</xyz>
-                <limit>
-                    <lower>.97</lower>
-                    <upper>.147</upper>
-                </limit>
-            </axis>
-        </joint>
+        
         <joint type="prismatic" name="right_liftcylinder_prism">
             <pose>0 0 0 0 0 0</pose>
             <child>right_liftcylinder_cylinder</child>
             <parent>right_liftcylinder_base</parent>
             <axis>
                 <xyz>1 0 0</xyz>
+                <!--
                 <limit>
-                    <lower>.97</lower>
+                    <lower>.097</lower>
                     <upper>.147</upper>
                 </limit>
+                -->
             </axis>
         </joint>
-        <joint type="prismatic" name="implementcylinder_implementbase_prism">
+        <joint type="revolute" name="right_liftarm_bucket_joint">
+            <pose>0 0 0 0 0 0</pose>
+            <child>bucket</child>
+            <parent>right_liftarm</parent>
+            <axis>
+                <xyz>0 1 0</xyz>
+                <dynamics>
+                    <friction>0.2</friction>
+                </dynamics>
+            </axis>
+            <physics>
+                <ode>
+                    <limit>
+                        <cfm>0</cfm>
+                        <erp>0.2</erp>
+                    </limit>
+                    <suspension>
+                        <cfm>0</cfm>
+                        <erp>0.2</erp>
+                    </suspension>
+                </ode>
+            </physics>
+        </joint>
+        <joint type="prismatic" name="sensor_implementcylinder_implementbase_prism">
             <pose>0 0 0 0 0 0</pose>
             <child>implementcylinder_cylinder</child>
             <parent>implementcylinder_base</parent>
             <axis>
                 <xyz>1 0 0</xyz>
-                <limit>
-                    <lower>.97</lower>
-                    <upper>.147</upper>
-                </limit>
             </axis>
         </joint>
         <!-- Implement Joints -->
@@ -946,17 +911,9 @@
             <axis>
                 <xyz>1 0 0</xyz>
             </axis>
-            <!--<pose>0 0 .0381 0 0 0</pose> -->
         </joint>
-        <joint type="revolute" name="implementlink_leftbellcrank_joint">
-            <pose>0 0 0 0 0 0</pose>
-            <child>bellcrank</child>
-            <parent>implement_link</parent>
-            <axis>
-                <xyz>1 0 0</xyz>
-            </axis>
-        </joint>
-        <joint type="revolute" name="leftbellcrank_implementcylinder_joint">
+        
+        <joint type="revolute" name="actuator_leftbellcrank_implementcylinder_joint">
             <pose>0 0 0 0 0 0</pose>
             <child>implementcylinder_cylinder</child>
             <parent>bellcrank</parent>
@@ -995,12 +952,80 @@
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </limit>
-                    <suspension>fbuc
+                    <suspension>
                         <cfm>0</cfm>
                         <erp>0.2</erp>
                     </suspension>
                 </ode>
             </physics>
+        </joint>
+        <joint type="prismatic" name="sensor_left_liftcylinder_prism">
+            <pose>0.0 0 0 0 0 0</pose>
+            <child>left_liftcylinder_cylinder</child>
+            <parent>left_liftcylinder_base</parent>
+            <axis>
+                <xyz>1 0 0</xyz>
+                <!--
+                <limit>
+                    <lower>.097</lower>
+                    <upper>.147</upper>
+                </limit>
+                -->
+            </axis>
+        </joint>
+        <joint type="revolute" name="actuator_left_liftarm_base_joint">
+            <pose>0 0 0 0 0 0</pose>
+            <child>left_liftarm</child>
+            <parent>base</parent>
+            <axis>
+                <xyz>0 1 0</xyz>
+                <dynamics>
+                    <friction>0.2</friction>
+                </dynamics>
+            </axis>
+            <physics>
+                <ode>
+                    <limit>
+                        <cfm>0</cfm>
+                        <erp>0.2</erp>
+                    </limit>
+                    <suspension>
+                        <cfm>0</cfm>
+                        <erp>0.2</erp>
+                    </suspension>
+                </ode>
+            </physics>
+        </joint>
+        <joint type="revolute" name="actuator_leftbellcrank_implementcylinder_joint">
+            <pose>0 0 0 0 0 0</pose>
+            <child>implementcylinder_cylinder</child>
+            <parent>bellcrank</parent>
+            <axis>
+                <xyz>0 1 0</xyz>
+                <dynamics>
+                    <friction>0.2</friction>
+                </dynamics>
+            </axis>
+            <physics>
+                <ode>
+                    <limit>
+                        <cfm>0</cfm>
+                        <erp>0.2</erp>
+                    </limit>
+                    <suspension>
+                        <cfm>0</cfm>
+                        <erp>0.2</erp>
+                    </suspension>
+                </ode>
+            </physics>
+        </joint>
+        <joint type="revolute" name="implementlink_leftbellcrank_joint">
+            <pose>0 0 0 0 0 0</pose>
+            <child>bellcrank</child>
+            <parent>implement_link</parent>
+            <axis>
+                <xyz>1 0 0</xyz>
+            </axis>
         </joint>
         <!--
         

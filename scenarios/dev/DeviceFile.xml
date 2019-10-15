@@ -142,7 +142,7 @@
         <Pin>
             <Name>CH4</Name>
             <Function>PWMOutput</Function>
-            <ConnectedDevice>LeftRightCylinderCommand</ConnectedDevice>
+            <ConnectedDevice>LiftCylinderCommand</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
 			<MaxValue>2000</MaxValue>
             <MinValue>1000</MinValue>
