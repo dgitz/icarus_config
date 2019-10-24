@@ -13,28 +13,28 @@ AlwaysOnNodes = {
 RunningNodes = {
 
 #Timing
-    "TimeMaster_Node" => device["dgitzdev"]
+    "TimeMaster_Node" => device["dgitzrosmaster"]
     #"TimeSlave_Node" => device["ControlModule1"]
     #"TimeSlave_Node" => device["ControlModule2"]
 
 #Communications
-    "NetworkTransceiver_Node" => device["dgitzdev"]
-    "TopicRemapper_Node" => device["dgitzdev"]
-    "Database_Node"         => device["dgitzdev"]
+    "NetworkTransceiver_Node" => device["dgitzrosmaster"]
+    "TopicRemapper_Node" => device["dgitzrosmaster"]
+    #"Database_Node"         => device["dgitzdev"]
 
 #Control
-    "Command_Node" => device["dgitzdev"]
-    "ControlGroup_Node" => device["dgitzdev"]
-    "Master_Node" => device["dgitzdev"]
+    "Command_Node" => device["dgitzrosmaster"]
+    "ControlGroup_Node" => device["dgitzrosmaster"]
+    "Master_Node" => device["dgitzrosmaster"]
     #"Master_Node" => device["ControlModule1"]
     #"Master_Node" => device["ControlModule2"]
 
 #Diagnostics
-    "SnapshotMaster_Node" => device["dgitzdev"]
+    "SnapshotMaster_Node" => device["dgitzrosmaster"]
     #"SnapshotSlave_Node" => device["ControlModule1"]
     #"SnapshotSlave_Node" => device["ControlModule2"]
-    #"DataLogger_Node" => device["dgitzdev"]
-    "Diagnostic_Node" => device["dgitzdev"]
+    "DataLogger_Node" => device["dgitzrosmaster"]
+    "Diagnostic_Node" => device["dgitzrosmaster"]
 
 #Sensors
     #"IMU_Node" => device["ControlModule1"]

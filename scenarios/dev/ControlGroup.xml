@@ -3,33 +3,10 @@
   <ControlGroupList>
         <!--
         <ControlGroup>
-            <Name>ImplementCylinderExtensionManualControl</Name>
-            <Mode>Direct</Mode>
-            <Limits>
-                <Input>
-                    <Max>1.0</Max>
-                    <Min>-1.0</Min>
-                    <Default>0.0</Default>
-                </Input>
-                <Output>
-                    <Max>2000.0</Max>
-                    <Min>1000.0</Min>
-                    <Default>1500.0</Default>
-                </Output>
-            </Limits>
-            <Input>
-                <Class>Signal</Class>
-                <Name>ImplementCylinderRemoteControl</Name>
-                <Units>m</Units>
-            </Input>
-            <Output>
-                <Class>Pin</Class>
-                <ConnectedDevice>ImplementCylinderCommand</ConnectedDevice>
-            </Output>
-        </ControlGroup>
-        -->
-        <!--
-        <ControlGroup>
+            <Options>
+                <PrintTuningInfo>0</PrintTuningInfo>
+                <PublishTuningInfo>1</PublishTuningInfo>
+            </Options>
             <Name>ImplementCylinderExtensionControl</Name>
             <Mode>PID</Mode>
             <Gains>
@@ -39,8 +16,9 @@
             </Gains>
             <Limits>
                 <Output>
-                    <Max>2000.0</Max>
-                    <Min>1000.0</Min>
+                    <Max>1600.0</Max>
+                    <Default>1500.0</Default>
+                    <Min>1400.0</Min>
                     <Delta>100000.0</Delta>
                 </Output>
             </Limits>
@@ -60,43 +38,16 @@
             </Output>
         </ControlGroup>
         -->
-        <!--
-        <ControlGroup>
-            <Name>LiftCylinderExtensionManualControl</Name>
-            <Mode>Direct</Mode>
-            <Limits>
-                <Input>
-                    <Max>1.0</Max>
-                    <Min>-1.0</Min>
-                    <Default>0.0</Default>
-                </Input>
-                <Output>
-                    <Max>1600.0</Max>
-                    <Min>1400.0</Min>
-                    <Default>1500.0</Default>
-                </Output>
-            </Limits>
-            <Input>
-                <Class>Signal</Class>
-                <Name>LiftCylinderRemoteControl</Name>
-                <Units>m</Units>
-            </Input>
-            <Output>
-                <Class>Pin</Class>
-                <ConnectedDevice>LiftCylinderCommand</ConnectedDevice>
-            </Output>
-        </ControlGroup>
-        -->
         <ControlGroup>
             <Options>
                 <PrintTuningInfo>0</PrintTuningInfo>
-                <PublishTuningInfo>1</PublishTuningInfo>
+                <PublishTuningInfo>0</PublishTuningInfo>
             </Options>
             <Name>LiftCylinderExtensionControl</Name>
             <Mode>PID</Mode>
             <Gains>
-                <P>-1408.095</P>
-                <I>-2.065</I>
+                <P>-593.92</P>
+                <I>-170.336</I>
                 <D>0.0</D>
             </Gains>
             <Limits>
