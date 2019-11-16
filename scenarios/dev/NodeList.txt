@@ -14,27 +14,27 @@ RunningNodes = {
 
 #Timing
     "TimeMaster_Node" => device["dgitzrosmaster"]
+    "TimeMaster_Node" => device["dgitzdev"]
     #"TimeSlave_Node" => device["ControlModule1"]
     #"TimeSlave_Node" => device["ControlModule2"]
 
 #Communications
-    "NetworkTransceiver_Node" => device["dgitzrosmaster"]
+    #"NetworkTransceiver_Node" => device["dgitzdev"]
     "TopicRemapper_Node" => device["dgitzrosmaster"]
     #"Database_Node"         => device["dgitzdev"]
 
 #Control
-    "Command_Node" => device["dgitzrosmaster"]
+    #"Command_Node" => device["dgitzdev"]
     "ControlGroup_Node" => device["dgitzrosmaster"]
-    "Master_Node" => device["dgitzrosmaster"]
+    "Master_Node" => device["dgitzdev"]
     #"Master_Node" => device["ControlModule1"]
     #"Master_Node" => device["ControlModule2"]
 
 #Diagnostics
-    "SnapshotMaster_Node" => device["dgitzrosmaster"]
-    #"SnapshotSlave_Node" => device["ControlModule1"]
+    "SnapshotMaster_Node" => device["dgitzdev"]
     #"SnapshotSlave_Node" => device["ControlModule2"]
-    "DataLogger_Node" => device["dgitzrosmaster"]
-    "Diagnostic_Node" => device["dgitzrosmaster"]
+    "DataLogger_Node" => device["dgitzdev"]
+    "Diagnostic_Node" => device["dgitzdev"]
 
 #Sensors
     #"IMU_Node" => device["ControlModule1"]
