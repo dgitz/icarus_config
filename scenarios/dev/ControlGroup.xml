@@ -1,18 +1,24 @@
 <?xml version="1.0" ?>
 <ControlGroupFile>
   <ControlGroupList>
+        <!--
         <ControlGroup>
+            <Options>
+                <PrintTuningInfo>0</PrintTuningInfo>
+                <PublishTuningInfo>1</PublishTuningInfo>
+            </Options>
             <Name>ImplementCylinderExtensionControl</Name>
             <Mode>PID</Mode>
             <Gains>
-                <P>1.0</P>
-                <I>0.1</I>
-                <D>0.01</D>
+                <P>0.0</P>
+                <I>0.0</I>
+                <D>0.0</D>
             </Gains>
             <Limits>
                 <Output>
-                    <Max>2000.0</Max>
-                    <Min>1000.0</Min>
+                    <Max>1600.0</Max>
+                    <Default>1500.0</Default>
+                    <Min>1400.0</Min>
                     <Delta>100000.0</Delta>
                 </Output>
             </Limits>
@@ -29,6 +35,42 @@
             <Output>
                 <Class>Pin</Class>
                 <ConnectedDevice>ImplementCylinderCommand</ConnectedDevice>
+            </Output>
+        </ControlGroup>
+        -->
+        <ControlGroup>
+            <Options>
+                <PrintTuningInfo>0</PrintTuningInfo>
+                <PublishTuningInfo>0</PublishTuningInfo>
+            </Options>
+            <Name>LiftCylinderExtensionControl</Name>
+            <Mode>PID</Mode>
+            <Gains>
+                <P>-593.92</P>
+                <I>-170.336</I>
+                <D>0.0</D>
+            </Gains>
+            <Limits>
+                <Output>
+                    <Max>1600.0</Max>
+                    <Default>1500.0</Default>
+                    <Min>1400.0</Min>
+                    <Delta>100000.0</Delta>
+                </Output>
+            </Limits>
+            <Input>
+                <Class>Signal</Class>
+                <Name>LiftCylinderCurrentPosition</Name>
+                <Units>m</Units>
+            </Input>
+            <Input>
+                <Class>Signal</Class>
+                <Name>LiftCylinderCommandPosition</Name>
+                <Units>m</Units>
+            </Input>
+            <Output>
+                <Class>Pin</Class>
+                <ConnectedDevice>LiftCylinderCommand</ConnectedDevice>
             </Output>
         </ControlGroup>
   </ControlGroupList>

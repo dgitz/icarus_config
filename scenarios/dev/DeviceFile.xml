@@ -34,6 +34,19 @@
     <Device>
         <ParentDevice>None</ParentDevice>
         <PartNumber>UNKNOWN</PartNumber>
+        <DeviceName>dgitzrosmaster</DeviceName>
+        <DeviceType>ComputeModule</DeviceType>
+        <PrimaryIP>10.0.0.111</PrimaryIP>
+        <Architecture>x86_64</Architecture>
+        <ID>2</ID>
+        <Capability>ROS</Capability>
+        <BoardCount>0</BoardCount>
+        <HatCount>0</HatCount>
+        <SensorCount>0</SensorCount>
+    </Device>
+    <Device>
+        <ParentDevice>None</ParentDevice>
+        <PartNumber>UNKNOWN</PartNumber>
         <DeviceName>dgitzdev</DeviceName>
         <DeviceType>ComputeModule</DeviceType>
         <PrimaryIP>10.0.0.90</PrimaryIP>
@@ -142,7 +155,7 @@
         <Pin>
             <Name>CH4</Name>
             <Function>PWMOutput</Function>
-            <ConnectedDevice>LeftRightCylinderCommand</ConnectedDevice>
+            <ConnectedDevice>LiftCylinderCommand</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
 			<MaxValue>2000</MaxValue>
             <MinValue>1000</MinValue>
