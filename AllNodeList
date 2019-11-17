@@ -1,6 +1,7 @@
-http://dgitzdev:34721/ 	/dgitzdev_timemaster_node
-http://dgitzdev:35401/ 	/dgitzdev_snapshot_node
-http://dgitzdev:37421/ 	/dgitzdev_diagnostic_node
-http://dgitzdev:43007/ 	/dgitzdev_master_node
-http://dgitzdev:46427/ 	/dgitzdev_datalogger_node
+http://dgitzdev:35041/ 	/dgitzdev_snapshot_node
+http://dgitzdev:38973/ 	/dgitzdev_command_node
+http://dgitzdev:41401/ 	/dgitzdev_timemaster_node
+http://dgitzdev:41855/ 	/dgitzdev_master_node
+http://dgitzdev:42887/ 	/dgitzdev_networktransceiver_node
+http://dgitzdev:43539/ 	/dgitzdev_diagnostic_node
 http://MasterModule:43549/ 	/rosout
