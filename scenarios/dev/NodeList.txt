@@ -13,19 +13,19 @@ AlwaysOnNodes = {
 RunningNodes = {
 
 #Timing
-    "TimeMaster_Node" => device["dgitzrosmaster"]
+    #"TimeMaster_Node" => device["dgitzrosmaster"]
     "TimeMaster_Node" => device["dgitzdev"]
     #"TimeSlave_Node" => device["ControlModule1"]
     #"TimeSlave_Node" => device["ControlModule2"]
 
 #Communications
-    "NetworkTransceiver_Node" => device["dgitzdev"]
-    "TopicRemapper_Node" => device["dgitzrosmaster"]
+    #"NetworkTransceiver_Node" => device["dgitzdev"]
+    #"TopicRemapper_Node" => device["dgitzrosmaster"]
     #"Database_Node"         => device["dgitzdev"]
 
 #Control
     "Command_Node" => device["dgitzdev"]
-    "ControlGroup_Node" => device["dgitzrosmaster"]
+    #"ControlGroup_Node" => device["dgitzrosmaster"]
     "Master_Node" => device["dgitzdev"]
     #"Master_Node" => device["ControlModule1"]
     #"Master_Node" => device["ControlModule2"]
@@ -33,7 +33,7 @@ RunningNodes = {
 #Diagnostics
     "SnapshotMaster_Node" => device["dgitzdev"]
     #"SnapshotSlave_Node" => device["ControlModule2"]
-    #"DataLogger_Node" => device["dgitzdev"]
+    "DataLogger_Node" => device["dgitzdev"]
     "Diagnostic_Node" => device["dgitzdev"]
 
 #Sensors
