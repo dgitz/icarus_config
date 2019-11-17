@@ -1,6 +1,8 @@
-Node:	dgitzdev_snapshot_node	Launched:	16/11/2019 08:46:42
-Node:	dgitzdev_command_node	Launched:	16/11/2019 08:46:42
-Node:	dgitzdev_timemaster_node	Launched:	16/11/2019 08:46:42
-Node:	dgitzdev_master_node	Launched:	16/11/2019 08:46:42
-Node:	dgitzdev_networktransceiver_node	Launched:	16/11/2019 08:46:42
-Node:	dgitzdev_diagnostic_node	Launched:	16/11/2019 08:46:42
+Node:	dgitzdev_master_node	Launched:	17/11/2019 07:54:57
+Node:	dgitzdev_datalogger_node	Launched:	17/11/2019 07:54:57
+Node:	dgitzdev_timemaster_node	Launched:	17/11/2019 07:54:57
+Node:	dgitzdev_diagnostic_node	Launched:	17/11/2019 07:54:57
+Node:	dgitzdev_command_node	Launched:	17/11/2019 07:54:57
+Node:	rostopic_22237_1573998312650	Launched:	17/11/2019 07:54:57
+Node:	dgitzdev_snapshot_node	Launched:	17/11/2019 07:54:57
+Node:	system_monitor	Launched:	17/11/2019 07:54:57
