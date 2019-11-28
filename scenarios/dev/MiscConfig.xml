@@ -1,11 +1,6 @@
 <?xml version="1.0" ?>
 <MiscConfigFile>
 	<PortList>
-		<Port>
-            <Capability>CameraStream</Capability>
-			<Name>CameraPort</Name>
-			<Number>5001</Number>
-		</Port>
         <Port>
             <Capability>WebConfig</Capability>
             <Name>WebConfigPort</Name>
