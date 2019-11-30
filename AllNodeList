@@ -1,11 +1,6 @@
-http://dgitzdev:32803/ 	/gazebo
-http://dgitzdev:33057/ 	/dgitzdev_snapshot_node
-http://dgitzdev:34249/ 	/dgitzdev_datalogger_node
-http://dgitzdev:38721/ 	/dgitzdev_command_node
-http://dgitzdev:38899/ 	/dgitzdev_diagnostic_node
-http://dgitzdev:39057/ 	/dgitzdev_networktransceiver_node
-http://dgitzdev:41293/ 	/gazebo_gui
-http://dgitzdev:41893/ 	/dgitzdev_timemaster_node
-http://dgitzdev:41989/ 	/dgitzdev_master_node
-http://dgitzdev:43841/ 	/dgitzdev_topicremapper_node
-http://MasterModule:44245/ 	/rosout
+http://dgitzdev:33157/ 	/dgitzdev_master_node
+http://dgitzdev:39025/ 	/dgitzdev_snapshot_node
+http://dgitzdev:42215/ 	/dgitzdev_imu_node
+http://dgitzdev:42351/ 	/dgitzdev_command_node
+http://dgitzdev:45899/ 	/dgitzdev_datalogger_node
+http://MasterModule:43171/ 	/rosout

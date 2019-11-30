@@ -18,13 +18,14 @@ RunningNodes = {
     "Master_Node" => device["ControlModule2"]
     "Master_Node" => device["dgitzrosmaster"]
     "Master_Node" => device["dgitzdev"]
-    #"Command_Node" => device["ControlModule1"]
-    #"CommandLauncher_Node" => device["ControlModule1"] #Raspi Cam not starting!
+    "Command_Node" => device["ControlModule1"]
 
 #Diagnostics
-    "DataLogger_Node" => device["dgitzrosmaster"]
-    "Diagnostic_Node" => device["ControlModule2"]
-    #"Safety_Node" => device["ControlModule1"]
+    "SnapshotMaster_Node" => device["dgitzdev"]
+    "SnapshotSlave_Node" => device["ControlModule1"]
+    "SnapshotSlave_Node" => device["ControlModule2"]
+    "DataLogger_Node" => device["dgitzdev"]
+    "Diagnostic_Node" => device["dgitzdev"]
 
 #Sensors
     "IMU_Node" => device["ControlModule1"]
@@ -35,13 +36,13 @@ RunningNodes = {
     
 
 #Board and Hat
-    #"HatController_Node" => device["ControlModule1"]
+    "HatController_Node" => device["ControlModule1"]
     "BoardController_Node" => device["ControlModule2"]
     "HatController_Node" => device["ControlModule2"]
 
 #User Control
-    #"Audio_Node" => device["ControlModule1"]
-    "Sample_Node" => device["dgitzdev"]
+    "Audio_Node" => device["ControlModule1"]
+    #"Sample_Node" => device["dgitzdev"]
 
     
 }
