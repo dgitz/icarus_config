@@ -1,1 +1,1 @@
-/home/robot/config/scenarios/sensor_characterization/NodeList.txt
+/home/robot/config/scenarios/scout_sim/NodeList.txt
