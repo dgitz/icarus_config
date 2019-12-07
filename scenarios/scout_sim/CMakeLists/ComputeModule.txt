@@ -18,7 +18,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   #cv_bridge
   roslib
-  #tf
+  tf
   rosbag
 )
 
@@ -138,6 +138,7 @@ include_directories(
   ${Boost_INCLUDE_DIRS}
   ${TinyXML_INCLUDE_DIRS}
   #${OpenCV_INCLUDE_DIRS}
+  ${roscpp_INCLUDE_DIRS}
 )
 
 
@@ -210,10 +211,13 @@ install(DIRECTORY include/${PROJECT_NAME}/
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-include_directories(include ${catkin_INCLUDE_DIRS} ${roscpp_INCLUDE_DIRS})
 #Libraries-General
 add_library(resourcemonitor util/resourcemonitor.cpp)
+#target_link_libraries(resourcemonitor ${catkin_LIBRARIES})
+add_dependencies(resourcemonitor eros_generate_messages_cpp)
+#add_dependencies(resourcemonitor ${catkin_EXPORTED_TARGETS})
 add_library(controlgroup util/controlgroup.cpp)
+add_dependencies(controlgroup eros_generate_messages_cpp)
 
 #Libraries-Communications
 add_library(udpmessage util/udpmessage.cpp)
