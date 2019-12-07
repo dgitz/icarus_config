@@ -3,6 +3,9 @@ Node:	dgitzdev_snapshot_node	Launched:	29/11/2019 11:22:32
 Node:	dgitzdev_imu_node	Launched:	29/11/2019 11:22:32
 Node:	dgitzdev_command_node	Launched:	29/11/2019 11:22:32
 Node:	dgitzdev_datalogger_node	Launched:	29/11/2019 11:22:32
-Node:	dgitzdev_networktransceiver_node	Launched:	20/11/2019 05:47:17
-Node:	gazebo_gui	Launched:	20/11/2019 05:47:17
-Node:	dgitzdev_timemaster_node	Launched:	20/11/2019 05:47:17
+<<<<<<< HEAD
+=======
+Node:	dgitzdev_datalogger_node	Launched:	01/12/2019 05:02:32
+Node:	dgitzdev_timemaster_node	Launched:	01/12/2019 05:02:32
+Node:	dgitzdev_master_node	Launched:	01/12/2019 05:02:32
+>>>>>>> origin/master

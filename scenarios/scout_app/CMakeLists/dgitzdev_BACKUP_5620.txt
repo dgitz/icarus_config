@@ -1,11 +1,13 @@
 #Target: dgitzrosmaster
 cmake_minimum_required(VERSION 2.8.3)
-SET(CMAKE_CXX_FLAGS "-std=c++11 -O3")
 project(icarus_rover_v2)
-
+set(CMAKE_BUILD_TYPE Debug)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
+SET(CMAKE_CXX_FLAGS "-std=c++0x")
+add_definitions(-std=c++11 -Wall -Wextra -Wno-switch)
+FIND_PACKAGE (Threads REQUIRED)
 find_package(catkin REQUIRED COMPONENTS
   cmake_modules
   roscpp
@@ -14,16 +16,46 @@ find_package(catkin REQUIRED COMPONENTS
   roslaunch
   message_generation
   sensor_msgs
+  cv_bridge
   roslib
+  tf
+  rosbag
+  eros
 )
 
+## Setup FuzzyLite Library
+set(FL_SYSTEM_LIBRARY FALSE) #Finds the library installed in the system
+set(FL_LIBRARY_DIR)
 
-## System dependencies are found with CMake's conventions
+if (NOT FL_SYSTEM_LIBRARY)
+    #it is possible to find the FuzzyLiteLibrary locally as follows,
+    #assuming the submodule of fuzzylite is added to the ${PROJECT_SOURCE_DIR}:
+    set(FL_HOME /home/robot/other_packages/fuzzylite-6.0/fuzzylite/)
+    set(FL_INCLUDE_DIR ${FL_HOME})
+    if (FL_DEBUG)
+        set(FL_LIBRARY_DIR ${FL_HOME}/debug/bin)
+    else()
+        set(FL_LIBRARY_DIR ${FL_HOME}/release/bin)
+    endif()
+    message("Finding FuzzyLiteLibrary locally at ${FL_LIBRARY_DIR}")
+
+    include_directories(${FL_INCLUDE_DIR})
+endif()
+
+set(FL_POSTFIX)
+if (FL_STATIC)
+    set(FL_POSTFIX "-static")
+endif()
+if (FL_DEBUG)
+    set(FL_POSTFIX "${FL_POSTFIX}-debug")
+endif()
+
+set(FL_LIBRARY_NAME  fuzzylite${FL_POSTFIX})
+find_library (FuzzyLiteLibrary ${FL_LIBRARY_NAME} HINTS ${FL_LIBRARY_DIR})
+
 find_package(Boost REQUIRED COMPONENTS system thread)
 find_package(TinyXML REQUIRED)
- 
- 
-FIND_LIBRARY(WIRINGPI_LIBRARY wiringPi /home/robot/other_packages/wiringPi)
+find_package(OpenCV)
 #rosbuild_add_boost_directories()
 #rosbuild_link_boost(icarus_rover_v2 thread signals system)
 
@@ -90,8 +122,9 @@ FIND_LIBRARY(WIRINGPI_LIBRARY wiringPi /home/robot/other_packages/wiringPi)
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES icarus_rover_v2
-  CATKIN_DEPENDS roscpp rospy std_msgs roslib
-  DEPENDS system_lib message_runtime TinyXML
+  CATKIN_DEPENDS roscpp message_runtime rospy std_msgs roslib
+  DEPENDS Boost message_runtime TinyXML
+  
 )
 
 ###########
@@ -102,22 +135,24 @@ catkin_package(
 ## Your package locations should be listed before other locations
 # include_directories(include)
 include_directories(
+  include
   ${catkin_INCLUDE_DIRS}
   ${Boost_INCLUDE_DIRS}
   ${TinyXML_INCLUDE_DIRS}
   ${OpenCV_INCLUDE_DIRS}
+  ${roscpp_INCLUDE_DIRS}
 )
 
 
 ## Declare a C++ library
-# add_library(icarus_rover_v2
-#   src/${PROJECT_NAME}/icarus_rover_v2.cpp
-# )
+
+
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
 # add_dependencies(icarus_rover_v2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
 
 ## Declare a C++ executable
 # add_executable(icarus_rover_v2_node src/icarus_rover_v2_node.cpp)
@@ -177,5 +212,47 @@ install(DIRECTORY include/${PROJECT_NAME}/
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-include_directories(include ${catkin_INCLUDE_DIRS} ${roscpp_INCLUDE_DIRS})
+#Libraries-General
+add_library(resourcemonitor util/resourcemonitor.cpp)
+<<<<<<< HEAD
+add_library(controlgroup util/controlgroup.cpp)
+=======
+#target_link_libraries(resourcemonitor ${catkin_LIBRARIES})
+add_dependencies(resourcemonitor eros_generate_messages_cpp)
+#add_dependencies(resourcemonitor ${catkin_EXPORTED_TARGETS})
+add_dependencies(controlgroup eros_generate_messages_cpp)
+>>>>>>> origin/master
+
+#Libraries-Communications
+add_library(udpmessage util/udpmessage.cpp)
+add_library(serialmessage util/serialmessage.cpp)
+add_library(spimessage util/spimessage.cpp)
+add_library(i2cmessage util/i2cmessage.cpp)
+
+#Add CMakeLists for Templates
+add_subdirectory(src_templates)
+
+#Add CMakeLists for Board
+add_subdirectory(src/Board)
+
+#Add CMakeLists for Communication
+add_subdirectory(src/Communication)
+
+#Add CMakeLists for Control
+add_subdirectory(src/Control)
+
+#Add CMakeLists for Diagnostics
+add_subdirectory(src/Diagnostics)
+
+#Add CMakeLists for Pose
+add_subdirectory(src/Pose)
+
+#Add CMakeLists for Sensors
+add_subdirectory(src/Sensor) 
+
+#Add CMakeLists for Timing
+add_subdirectory(src/Timing)
+
+#Add CMakeLists for User Control
+add_subdirectory(src/User_Control)
 
