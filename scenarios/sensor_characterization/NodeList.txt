@@ -1,0 +1,31 @@
+#Available devices: dgitzrosmaster,ControlModule1,ControlModule2
+#Always Running Section
+#Use a pound sign for comments
+AlwaysOnNodes = {
+    "TimeMaster_Node" => device["dgitzrosmaster"]
+    "TimeSlave_Node" => device["ControlModule1"]
+    "TimeSlave_Node" => device["ControlModule2"]
+    "TimeSlave_Node" => device["dgitzdev"]
+    
+}
+#Normal Running Section
+RunningNodes = {
+
+#Control
+    "Master_Node" => device["dgitzrosmaster"]
+    "Master_Node" => device["ControlModule1"]
+    "Master_Node" => device["dgitzdev"]
+    "Master_Node" => device["ControlModule2"]
+    "Command_Node" => device["dgitzrosmaster"]
+
+#Diagnostics
+    "SnapshotMaster_Node" => device["dgitzrosmaster"]
+    "SnapshotSlave_Node" => device["ControlModule1"]
+    "SnapshotSlave_Node" => device["dgitzdev"]
+    "SnapshotSlave_Node" => device["ControlModule2"]
+    "DataLogger_Node" => device["dgitzrosmaster"]
+
+#Sensors
+    "IMU_Node" => device["ControlModule1"]
+        
+}

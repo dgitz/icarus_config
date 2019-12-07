@@ -1,8 +1,8 @@
-Node:	dgitzdev_command_node	Launched:	01/12/2019 05:02:32
-Node:	dgitzdev_topicremapper_node	Launched:	01/12/2019 05:02:32
-Node:	dgitzdev_networktransceiver_node	Launched:	01/12/2019 05:02:32
-Node:	dgitzdev_snapshot_node	Launched:	01/12/2019 05:02:32
-Node:	dgitzdev_diagnostic_node	Launched:	01/12/2019 05:02:32
+Node:	dgitzdev_master_node	Launched:	29/11/2019 11:22:32
+Node:	dgitzdev_snapshot_node	Launched:	29/11/2019 11:22:32
+Node:	dgitzdev_imu_node	Launched:	29/11/2019 11:22:32
+Node:	dgitzdev_command_node	Launched:	29/11/2019 11:22:32
+Node:	dgitzdev_datalogger_node	Launched:	29/11/2019 11:22:32
 Node:	dgitzdev_datalogger_node	Launched:	01/12/2019 05:02:32
 Node:	dgitzdev_timemaster_node	Launched:	01/12/2019 05:02:32
 Node:	dgitzdev_master_node	Launched:	01/12/2019 05:02:32
