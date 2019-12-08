@@ -16,7 +16,6 @@
         <DeviceType>Battery</DeviceType>
         <ID>0</ID>
     </Device>
-    <!--
     <Device>
         <ParentDevice>None</ParentDevice>
         <PartNumber>UNKNOWN</PartNumber>
@@ -30,7 +29,6 @@
         <HatCount>0</HatCount>
         <SensorCount>0</SensorCount>
     </Device>
-    -->
     <Device>
         <ParentDevice>None</ParentDevice>
         <PartNumber>UNKNOWN</PartNumber>

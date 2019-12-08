@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<SensorConfigFile>
+    <PartNumber>110015</PartNumber>
+    <DeviceType>IMU</DeviceType>
+    <ID>3551284</ID>
+    <Statistics>
+        <General>
+        </General>
+        <Accelerometer> <!-- Reference: https://github.com/kauailabs/navxmxp/blob/master/stm32/MPU9250/mpucontroller.h -->
+            <UpdateRate>50.0</UpdateRate>
+            <FullScaleRange units="G">2.0</FullScaleRange> 
+            <NoiseType>GaussianQuantized</NoiseType>
+            <X>
+                <Mean>0.0</Mean> <!-- Assume calibrated out -->
+                <StdDev>0.01466293</StdDev>
+                <Precision>0.00059795</Precision>
+            </X>
+            <Y>
+                <Mean>0.0</Mean> <!-- Assume calibrated out -->
+                <StdDev>0.01499929</StdDev>
+                <Precision>0.00059795</Precision> 
+            </Y>
+            <Z>
+                <Mean>0.0</Mean> <!-- Assume calibrated out -->
+                <StdDev>0.02270911</StdDev>
+                <Precision>0.00059795</Precision> 
+            </Z>
+        </Accelerometer>
+        <Gyroscope> 
+            <UpdateRate>50.0</UpdateRate>
+            <FullScaleRange units="deg/s">2000.0</FullScaleRange> <!-- Reference: https://github.com/kauailabs/navxmxp/blob/master/stm32/MPU9250/mpucontroller.h -->
+            <X>
+                <Mean>-0.0330</Mean>
+                <StdDev>0.05645735</StdDev>
+                <Precision>0.061035</Precision>  
+            </X>
+            <Y>
+                <Mean>-0.0528</Mean>
+                <StdDev>0.07339414</StdDev>
+                <Precision>0.061035</Precision>  
+            </Y>
+            <Z>
+                <Mean>-0.0397</Mean>
+                <StdDev>0.06702133</StdDev>
+                <Precision>0.061035</Precision>  
+            </Z>
+        </Gyroscope>
+        <Magnetometer>
+            <UpdateRate>2.0</UpdateRate>
+            <FullScaleRange units="norm uT">1.0</FullScaleRange>
+            <X>
+                <Mean>0.0</Mean> <!-- Assume calibrated out -->
+                <StdDev>0.48347459</StdDev>
+                <Precision>5.0157e-05</Precision>  
+            </X>
+            <Y>
+                <Mean>0.0</Mean> <!-- Assume calibrated out -->
+                <StdDev>0.57240413</StdDev>
+                <Precision>5.0157e-05</Precision>  
+            </Y>
+            <Z>
+                <Mean>0.0</Mean> <!-- Assume calibrated out -->
+                <StdDev>0.51843754</StdDev>
+                <Precision>5.0157e-05</Precision> 
+            </Z>
+            <EllipsoidFit>
+                <Offset>36.666992200000095 0.0 3.333374025000012</Offset> <!-- Hard Iron -->
+                <Scale>0.402978190419065 8.424242681029288 2.501431480382116</Scale> <!-- Soft Iron -->
+                <RotationMatrix>3.10117540983419e-04 -1.51020666970914e-04 1.52889194527284e-04
+                                0.00000000000000e+00 1.93462966313766e-04 1.24510513952069e-04 
+                                0.00000000000000e+00 0.00000000000000e+00 1.47065324270568e-04</RotationMatrix>
+                <Bias>-2.48529415402473 10.54267237231951 -17.54290868899513</Bias>
+            </EllipsoidFit>
+        </Magnetometer>
+    </Statistics>
+</SensorConfigFile>

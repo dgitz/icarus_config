@@ -1,13 +1,10 @@
 #Target: dgitzrosmaster
 cmake_minimum_required(VERSION 2.8.3)
+SET(CMAKE_CXX_FLAGS "-std=c++11 -O3")
 project(icarus_rover_v2)
-set(CMAKE_BUILD_TYPE Debug)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-SET(CMAKE_CXX_FLAGS "-std=c++0x")
-add_definitions(-std=c++11 -Wall -Wextra -Wno-switch)
-FIND_PACKAGE (Threads REQUIRED)
 find_package(catkin REQUIRED COMPONENTS
   cmake_modules
   roscpp
@@ -18,7 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   cv_bridge
   roslib
-  tf
+  #tf
   rosbag
   eros
 )
@@ -55,7 +52,9 @@ find_library (FuzzyLiteLibrary ${FL_LIBRARY_NAME} HINTS ${FL_LIBRARY_DIR})
 
 find_package(Boost REQUIRED COMPONENTS system thread)
 find_package(TinyXML REQUIRED)
-find_package(OpenCV)
+ 
+ 
+FIND_LIBRARY(WIRINGPI_LIBRARY wiringPi /home/robot/other_packages/wiringPi)
 #rosbuild_add_boost_directories()
 #rosbuild_link_boost(icarus_rover_v2 thread signals system)
 
