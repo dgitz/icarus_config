@@ -1,4 +1,4 @@
-#Available devices: dgitzrosmaster,ControlModule1,ControlModule2
+#Available devices: dgitzdev,dgitzrosmaster,ControlModule1,ControlModule2
 #Always Running Section
 #Use a pound sign for comments
 AlwaysOnNodes = {
@@ -19,7 +19,7 @@ RunningNodes = {
 #Communications
     "NetworkTransceiver_Node" => device["dgitzdev"]
     "TopicRemapper_Node" => device["dgitzdev"]
-    #"Database_Node"         => device["dgitzdev"]
+    "Database_Node"         => device["dgitzdev"]
     "Speaker_Node"          => device["dgitzdev"]
 
 #Control
@@ -30,7 +30,7 @@ RunningNodes = {
 #Diagnostics
     "SnapshotMaster_Node" => device["dgitzdev"]
     "SnapshotSlave_Node" => device["dgitzrosmaster"]
-    #"DataLogger_Node" => device["dgitzdev"]
+    "DataLogger_Node" => device["dgitzdev"]
     "Diagnostic_Node" => device["dgitzdev"]
 
 #Sensors
@@ -50,3 +50,4 @@ RunningNodes = {
     #"Audio_Node" => device["ControlModule1"]
     
 }
+
