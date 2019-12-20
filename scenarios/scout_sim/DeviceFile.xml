@@ -141,6 +141,24 @@
 			<MaxValue>2000</MaxValue>
             <MinValue>1000</MinValue>
         </Pin>
+        <Pin>
+            <Name>CylinderDriverA</Name>
+            <Number>4<Number>
+            <Function>PWMOutput</Function>
+            <ConnectedDevice>ImplementCylinder</ConnectedDevice>
+            <DefaultValue>1500</DefaultValue>
+			<MaxValue>2000</MaxValue>
+            <MinValue>1000</MinValue>
+        </Pin>
+        <Pin>
+            <Name>CylinderDriverB</Name>
+            <Number>5</Number>
+            <Function>PWMOutput</Function>
+            <ConnectedDevice>LiftCylinder</ConnectedDevice>
+            <DefaultValue>1500</DefaultValue>
+			<MaxValue>2000</MaxValue>
+            <MinValue>1000</MinValue>
+        </Pin>
     </Device>
     <Device>
         <ParentDevice>ControlModule1</ParentDevice>
@@ -231,7 +249,7 @@
         <Architecture>ArduinoMega</Architecture>
         <ID>0</ID>
         <PinCount>4</PinCount>
-        <SensorCount>4</SensorCount>
+        <SensorCount>2</SensorCount>
         <Pin>
             <Number>0</Number>
             <Function>QuadratureEncoderInput</Function>
@@ -246,20 +264,6 @@
             <Name>RightEncoder</Name>
             <ConnectedSensor>RightEncoder</ConnectedSensor>
         </Pin>
-        <Pin>
-            <Number>2</Number>
-            <Function>AnalogInput</Function>
-            <DefaultValue>0</DefaultValue>
-            <Name>BucketAngleSensor</Name>
-            <ConnectedSensor>BucketAngleSensor</ConnectedSensor>
-        </Pin>
-        <Pin>
-            <Number>3</Number>
-            <Function>AnalogInput</Function>
-            <DefaultValue>0</DefaultValue>
-            <Name>BucketLiftSensor</Name>
-            <ConnectedSensor>BucketLiftSensor</ConnectedSensor>
-        </Pin>
     </Device>
     <Device>
         <ParentDevice>ControlModule2</ParentDevice>
@@ -268,8 +272,8 @@
         <DeviceType>GPIOHat</DeviceType>
         <Capability>GPIO</Capability>
         <ID>20</ID>
-        <PinCount>4</PinCount>
-        <SensorCount>4</SensorCount>
+        <PinCount>8</PinCount>
+        <SensorCount>7</SensorCount>
         <Pin>
             <Number>0</Number>
             <Function>UltraSonicSensorInput</Function>
@@ -297,6 +301,27 @@
             <DefaultValue>0</DefaultValue>
             <Name>BRSonar</Name>
             <ConnectedSensor>BRSonar</ConnectedSensor>
+        </Pin>
+        <Pin>
+            <Number>4</Number>
+            <Function>AnalogInput</Function>
+            <DefaultValue>0</DefaultValue>
+            <Name>ImplementCylinderPosition</Name>
+            <ConnectedSensor>ImplementCylinderPosition</ConnectedSensor>
+        </Pin>
+        <Pin>
+            <Number>5</Number>
+            <Function>AnalogInput</Function>
+            <DefaultValue>0</DefaultValue>
+            <Name>LeftLiftCylinderPosition</Name>
+            <ConnectedSensor>LeftLiftCylinderPosition</ConnectedSensor>
+        </Pin>
+        <Pin>
+            <Number>6</Number>
+            <Function>AnalogInput</Function>
+            <DefaultValue>0</DefaultValue>
+            <Name>RightLiftCylinderPosition</Name>
+            <ConnectedSensor>RightLiftCylinderPosition</ConnectedSensor>
         </Pin>
     </Device>
     <Device>

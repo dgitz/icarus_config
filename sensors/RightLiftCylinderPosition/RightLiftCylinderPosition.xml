@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<Sensor>
+    <Type>Potentiometer</Type>
+    <OutputDataType>signal</OutputDataType>
+    <Units>meter</Units>
+    <MinInputValue>0</MinInputValue>
+    <MaxInputValue>1024</MaxInputValue>
+    <MinOutputValue>0</MinOutputValue>
+    <MaxOutputValue>0.2</MaxOutputValue>
+</Sensor>

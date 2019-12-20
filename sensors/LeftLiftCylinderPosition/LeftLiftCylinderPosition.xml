@@ -2,9 +2,9 @@
 <Sensor>
     <Type>Potentiometer</Type>
     <OutputDataType>signal</OutputDataType>
-    <Units>degree</Units>
+    <Units>meter</Units>
     <MinInputValue>0</MinInputValue>
     <MaxInputValue>1024</MaxInputValue>
     <MinOutputValue>0</MinOutputValue>
-    <MaxOutputValue>180</MaxOutputValue>
+    <MaxOutputValue>0.2</MaxOutputValue>
 </Sensor>
