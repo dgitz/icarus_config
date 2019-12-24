@@ -2,7 +2,7 @@
 <package format="2">
   <name>icarus_rover_v2</name>
   <version>0.0.0</version>
-  <description>The icarus_rover_v2 package</description>
+  <description>The icarus_rover_v2 package. Target: BuildServer1</description>
   <maintainer email="davidgitz@gmail.com">dgitz</maintainer>
   <license>BSD</license>
   <url type="website">https://github.com/dgitz/icarus_rover_v2/wiki</url>
@@ -53,6 +53,8 @@
   <!-- Use doc_depend for packages you need only for building documentation: -->
   <!--   <doc_depend>doxygen</doc_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <exec_depend>sensor_msgs</exec_depend>
   <build_depend>eros</build_depend>
   <build_depend>rospy</build_depend>
   <build_depend>std_msgs</build_depend>

@@ -45,6 +45,16 @@
     <Device>
         <ParentDevice>None</ParentDevice>
         <PartNumber>UNKNOWN</PartNumber>
+        <DeviceName>BuildServer0</DeviceName>
+        <DeviceType>BuildServer</DeviceType>
+        <PrimaryIP>10.0.0.180</PrimaryIP>
+        <Architecture>armv7l</Architecture>
+        <ID>1</ID>
+        <Capability>Build</Capability>
+    </Device>
+    <Device>
+        <ParentDevice>None</ParentDevice>
+        <PartNumber>UNKNOWN</PartNumber>
         <DeviceName>BuildServer1</DeviceName>
         <DeviceType>BuildServer</DeviceType>
         <PrimaryIP>10.0.0.179</PrimaryIP>
