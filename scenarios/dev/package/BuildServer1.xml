@@ -54,7 +54,7 @@
   <!--   <doc_depend>doxygen</doc_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>sensor_msgs</build_depend>
-  <exec_depened>sensor_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
   <build_depend>eros</build_depend>
   <build_depend>rospy</build_depend>
   <build_depend>std_msgs</build_depend>
@@ -75,6 +75,8 @@
   <exec_depend>cmake_modules</exec_depend>
   <build_depend>tf</build_depend>
     <exec_depend>tf</exec_depend>
+  <build_depend>sound_play</build_depend>
+  <exec_depend>sound_play</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>

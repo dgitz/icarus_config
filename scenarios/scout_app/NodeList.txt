@@ -13,6 +13,8 @@ RunningNodes = {
     #Timing
     #Communications
     "TopicRemapper_Node"    => device["ControlModule2"]
+    "Speaker_Node"          => device["ControlModule1"]
+
 #Control
     "Master_Node" => device["ControlModule1"]
     "Master_Node" => device["ControlModule2"]

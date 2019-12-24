@@ -13,8 +13,8 @@ http://ControlModule2:37741/ 	/ControlModule2_timeslave_node
 http://ControlModule2:39063/ 	/ControlModule2_topicremapper_node
 http://ControlModule2:42271/ 	/ControlModule2_hatcontroller_node
 http://ControlModule2:45543/ 	/ControlModule2_boardcontroller_node
-http://dgitzdev:35081/ 	/dgitzdev_master_node
-http://dgitzdev:39861/ 	/dgitzdev_diagnostic_node
-http://dgitzdev:42277/ 	/dgitzdev_snapshot_node
-http://dgitzdev:44081/ 	/dgitzdev_datalogger_node
+http://dgitzdev:39227/ 	/dgitzdev_snapshot_node
+http://dgitzdev:39823/ 	/dgitzdev_datalogger_node
+http://dgitzdev:40511/ 	/dgitzdev_master_node
+http://dgitzdev:43271/ 	/dgitzdev_diagnostic_node
 http://MasterModule:38895/ 	/rosout
