@@ -1,4 +1,4 @@
-#Target: dgitzrosmaster
+#Target: BuildServer1
 cmake_minimum_required(VERSION 2.8.3)
 SET(CMAKE_CXX_FLAGS "-std=c++11 -O3")
 project(icarus_rover_v2)
@@ -13,7 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   roslaunch
   message_generation
   sensor_msgs
-  cv_bridge
+  #cv_bridge
   roslib
   #tf
   rosbag
@@ -138,7 +138,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
   ${Boost_INCLUDE_DIRS}
   ${TinyXML_INCLUDE_DIRS}
-  ${OpenCV_INCLUDE_DIRS}
+  #${OpenCV_INCLUDE_DIRS}
   ${roscpp_INCLUDE_DIRS}
 )
 
@@ -213,9 +213,7 @@ install(DIRECTORY include/${PROJECT_NAME}/
 # catkin_add_nosetests(test)
 #Libraries-General
 add_library(resourcemonitor util/resourcemonitor.cpp)
-#target_link_libraries(resourcemonitor ${catkin_LIBRARIES})
 add_dependencies(resourcemonitor eros_generate_messages_cpp)
-#add_dependencies(resourcemonitor ${catkin_EXPORTED_TARGETS})
 add_library(controlgroup util/controlgroup.cpp)
 add_dependencies(controlgroup eros_generate_messages_cpp)
 
