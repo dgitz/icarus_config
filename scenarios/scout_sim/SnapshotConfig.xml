@@ -22,7 +22,7 @@
             <Command file="ntp_status">ntpq -p</Command>
             <Command file="lsmod">lsmod</Command>
             <Script>/home/robot/scripts/capture_screenshot</Script>
-            <Folder>/home/robot/logs/output/</Folder>
+            <Folder>/var/log/output/</Folder>
             <Folder>/home/robot/config/</Folder>
             <Folder>/var/log/ntpstats/</Folder>
             <File>/var/log/ntp.drift</File>
@@ -47,7 +47,7 @@
             <Command file="ntp_status">ntpq -p</Command>
             <Command file="lsmod">lsmod</Command>
             <Script>/home/robot/scripts/capture_screenshot</Script>
-            <Folder>/home/robot/logs/output/</Folder>
+            <Folder>/var/log/output/</Folder>
             <Folder>/home/robot/config/</Folder>
             <Folder>/var/log/ntpstats/</Folder>
             <File>/var/log/ntp.drift</File>

@@ -1,1 +1,13 @@
 configdatabase.db
+ActiveNodes
+AllNodeList
+ControlGroup.xml
+DeviceFile.xml
+HardwareFile.xml
+JoystickCalibration.xml
+MiscConfig.xml
+NodeList.txt
+SensorLink.xml
+SnapshotConfig.xml
+SystemFile.xml
+TopicMap.xml

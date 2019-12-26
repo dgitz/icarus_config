@@ -1,4 +1,12 @@
-Node:	dgitzdev_snapshot_node	Launched:	24/12/2019 05:23:42
-Node:	dgitzdev_datalogger_node	Launched:	24/12/2019 05:23:42
-Node:	dgitzdev_master_node	Launched:	24/12/2019 05:23:42
-Node:	dgitzdev_diagnostic_node	Launched:	24/12/2019 05:23:42
+Node:	dgitzdev_master_node	Launched:	23/12/2019 09:33:44
+Node:	dgitzdev_diagnostic_node	Launched:	23/12/2019 09:33:44
+Node:	dgitzdev_snapshot_node	Launched:	23/12/2019 09:33:44
+Node:	dgitzdev_datalogger_node	Launched:	23/12/2019 09:33:44
+Node:	dgitzdev_networktransceiver_node	Launched:	07/12/2019 06:46:01
+Node:	dgitzdev_topicremapper_node	Launched:	07/12/2019 06:46:01
+Node:	dgitzdev_database_node	Launched:	07/12/2019 06:46:01
+Node:	dgitzdev_snapshot_node	Launched:	07/12/2019 06:46:01
+Node:	dgitzdev_timemaster_node	Launched:	07/12/2019 06:46:01
+Node:	dgitzdev_datalogger_node	Launched:	07/12/2019 06:46:01
+Node:	dgitzdev_command_node	Launched:	07/12/2019 06:46:01
+Node:	gazebo_gui	Launched:	07/12/2019 06:46:01

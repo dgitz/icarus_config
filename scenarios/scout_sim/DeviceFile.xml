@@ -10,6 +10,14 @@
         <Architecture>armv7l</Architecture>
     </Device>
     <Device>
+        <ParentDevice>None</ParentDevice>
+        <PartNumber>100003</PartNumber>
+        <DeviceName>DevModule1</DeviceName>
+        <DeviceType>ControlModule</DeviceType>
+        <PrimaryIP>10.0.0.161</PrimaryIP>
+        <Architecture>armv7l</Architecture>
+    </Device>
+    <Device>
         <ParentDevice>ControlModule2</ParentDevice>
         <PartNumber>555005</PartNumber>
         <DeviceName>MainBattery</DeviceName>

@@ -1,7 +1,13 @@
+<<<<<<< HEAD
+<node name="$(env ROS_HOSTNAME)_speaker_node" pkg="icarus_rover_v2" type="speaker_node"  output="screen" clear_params="true">
+        <param name="verbosity_level"       value="DEBUG"/>
+        <param name="require_pps_to_start"  value="false"/> 
+=======
 <node name="$(env ROS_HOSTNAME)_speaker_node" pkg="icarus_rover_v2" type="speaker_node"  output="screen" clear_params="true" respawn="true">
         
     <param name="verbosity_level"       value="DEBUG"/>
         <param name="require_pps_to_start"  value="true"/> 
         <param name="loop1_rate"            value="20.0"/> <!-- Process Update -->  
         <param name="loop2_rate"            value="5.0"/> <!-- Publish -->
+>>>>>>> origin/master
 </node>
