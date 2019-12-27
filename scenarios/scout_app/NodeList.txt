@@ -42,6 +42,6 @@ RunningNodes = {
     "HatController_Node" => device["ControlModule2"]
 
 #User Control
-    "Audio_Node" => device["ControlModule1"]
+    #"Audio_Node" => device["ControlModule1"]
     
 }

@@ -128,7 +128,7 @@
             <Function>PWMOutput-NonActuator</Function>
             <ConnectedDevice>PanServo</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
-			<MaxValue>2000</MaxValue>
+	    <MaxValue>2000</MaxValue>
             <MinValue>1000</MinValue>
         </Pin>
         <Pin>

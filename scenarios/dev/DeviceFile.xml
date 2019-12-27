@@ -24,7 +24,6 @@
         <DeviceType>Battery</DeviceType>
         <ID>0</ID>
     </Device>
-    <!--
     <Device>
         <ParentDevice>None</ParentDevice>
         <PartNumber>UNKNOWN</PartNumber>
@@ -33,20 +32,6 @@
         <PrimaryIP>10.0.0.111</PrimaryIP>
         <Architecture>x86_64</Architecture>
         <ID>1</ID>
-        <Capability>ROS</Capability>
-        <BoardCount>0</BoardCount>
-        <HatCount>0</HatCount>
-        <SensorCount>0</SensorCount>
-    </Device>
-    -->
-    <Device>
-        <ParentDevice>None</ParentDevice>
-        <PartNumber>UNKNOWN</PartNumber>
-        <DeviceName>dgitzrosmaster</DeviceName>
-        <DeviceType>ComputeModule</DeviceType>
-        <PrimaryIP>10.0.0.111</PrimaryIP>
-        <Architecture>x86_64</Architecture>
-        <ID>2</ID>
         <Capability>ROS</Capability>
         <BoardCount>0</BoardCount>
         <HatCount>0</HatCount>
@@ -64,6 +49,16 @@
         <BoardCount>0</BoardCount>
         <HatCount>0</HatCount>
         <SensorCount>0</SensorCount>
+    </Device>
+    <Device>
+        <ParentDevice>None</ParentDevice>
+        <PartNumber>UNKNOWN</PartNumber>
+        <DeviceName>BuildServer0</DeviceName>
+        <DeviceType>BuildServer</DeviceType>
+        <PrimaryIP>10.0.0.180</PrimaryIP>
+        <Architecture>armv7l</Architecture>
+        <ID>1</ID>
+        <Capability>Build</Capability>
     </Device>
     <Device>
         <ParentDevice>None</ParentDevice>
@@ -113,10 +108,10 @@
         <HatCount>3</HatCount>
         <SensorCount>0</SensorCount>
         <Pin>
-            <Number>16</Number>
             <Function>DigitalInput-Safety</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>ArmSwitch</Name>
+            <Name>GPIO04</Name>
+            <ConnectedDevice>ArmSwitch</ConnectedDevice>
         </Pin>
     </Device>
     <Device>
@@ -127,13 +122,13 @@
         <Capability>GPIO</Capability>
         <ID>64</ID>
         <BoardCount>0</BoardCount>
-        <PinCount>6</PinCount>
+        <PinCount>4</PinCount>
         <Pin>
             <Name>CH0</Name>
             <Function>PWMOutput-NonActuator</Function>
             <ConnectedDevice>PanServo</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
-			<MaxValue>2000</MaxValue>
+	    <MaxValue>2000</MaxValue>
             <MinValue>1000</MinValue>
         </Pin>
         <Pin>
@@ -156,22 +151,6 @@
             <Name>CH3</Name>
             <Function>PWMOutput</Function>
             <ConnectedDevice>RightMotorController</ConnectedDevice>
-            <DefaultValue>1500</DefaultValue>
-			<MaxValue>2000</MaxValue>
-            <MinValue>1000</MinValue>
-        </Pin>
-        <Pin>
-            <Name>CH4</Name>
-            <Function>PWMOutput</Function>
-            <ConnectedDevice>LiftCylinderCommand</ConnectedDevice>
-            <DefaultValue>1500</DefaultValue>
-			<MaxValue>2000</MaxValue>
-            <MinValue>1000</MinValue>
-        </Pin>
-        <Pin>
-            <Name>CH5</Name>
-            <Function>PWMOutput</Function>
-            <ConnectedDevice>ImplementCylinderCommand</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
 			<MaxValue>2000</MaxValue>
             <MinValue>1000</MinValue>
@@ -268,32 +247,16 @@
         <PinCount>4</PinCount>
         <SensorCount>4</SensorCount>
         <Pin>
-            <Number>0</Number>
             <Function>QuadratureEncoderInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>LeftEncoder</Name>
+            <Name>0</Name>
             <ConnectedSensor>LeftEncoder</ConnectedSensor>
         </Pin>
         <Pin>
-            <Number>1</Number>
             <Function>QuadratureEncoderInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>RightEncoder</Name>
+            <Name>1</Name>
             <ConnectedSensor>RightEncoder</ConnectedSensor>
-        </Pin>
-        <Pin>
-            <Number>2</Number>
-            <Function>AnalogInput</Function>
-            <DefaultValue>0</DefaultValue>
-            <Name>BucketAngleSensor</Name>
-            <ConnectedSensor>BucketAngleSensor</ConnectedSensor>
-        </Pin>
-        <Pin>
-            <Number>3</Number>
-            <Function>AnalogInput</Function>
-            <DefaultValue>0</DefaultValue>
-            <Name>BucketLiftSensor</Name>
-            <ConnectedSensor>BucketLiftSensor</ConnectedSensor>
         </Pin>
     </Device>
     <Device>
@@ -308,25 +271,25 @@
         <Pin>
             <Function>UltraSonicSensorInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>PC6</Name>
+            <Name>PB4</Name>
             <ConnectedSensor>FLSonar</ConnectedSensor>
         </Pin>
         <Pin>
             <Function>UltraSonicSensorInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>PB7</Name>
+            <Name>PB5</Name>
             <ConnectedSensor>FRSonar</ConnectedSensor>
         </Pin>
         <Pin>
             <Function>UltraSonicSensorInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>PE6</Name>
+            <Name>PB6</Name>
             <ConnectedSensor>BLSonar</ConnectedSensor>
         </Pin>
         <Pin>
             <Function>UltraSonicSensorInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>PB4</Name>
+            <Name>PB7</Name>
             <ConnectedSensor>BRSonar</ConnectedSensor>
         </Pin>
     </Device>

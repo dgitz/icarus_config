@@ -1,6 +1,3 @@
-http://ControlModule1:36163/ 	/ControlModule1_master_node
-http://ControlModule1:36679/ 	/ControlModule1_speaker_node
-http://ControlModule2:40881/ 	/ControlModule2_timeslave_node
-http://dgitzdev:43941/ 	/dgitzdev_master_node
-http://dgitzdev:44415/ 	/dgitzdev_snapshot_node
-http://MasterModule:33507/ 	/rosout
+http://dgitzdev:35439/ 	/dgitzdev_master_node
+http://dgitzdev:46641/ 	/dgitzdev_snapshot_node
+http://MasterModule:46551/ 	/rosout
