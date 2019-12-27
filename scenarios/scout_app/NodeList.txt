@@ -1,4 +1,4 @@
-#Available devices: dgitzrosmaster,ControlModule1,ControlModule2
+#Available devices: dgitzrosmaster,ControlModule1,ControlModule2,dgitzrosmaster,DevModule1
 #Always Running Section
 #Use a pound sign for comments
 AlwaysOnNodes = {
@@ -18,7 +18,6 @@ RunningNodes = {
 #Control
     "Master_Node" => device["ControlModule1"]
     "Master_Node" => device["ControlModule2"]
-    "Master_Node" => device["dgitzrosmaster"]
     "Master_Node" => device["dgitzdev"]
     "Command_Node" => device["ControlModule1"]
 
@@ -26,15 +25,15 @@ RunningNodes = {
     "SnapshotMaster_Node" => device["dgitzdev"]
     "SnapshotSlave_Node" => device["ControlModule1"]
     "SnapshotSlave_Node" => device["ControlModule2"]
-    "DataLogger_Node" => device["dgitzdev"]
-    "Diagnostic_Node" => device["dgitzdev"]
+    #"DataLogger_Node" => device["dgitzdev"]
+    "Diagnostic_Node" => device["ControlModule2"]
+    #"Safety_Node"       => device["ControlModule1"]
 
 #Sensors
     "IMU_Node" => device["ControlModule1"]
     
 
 #Pose
-    #"Calibration_Node" => device["dgitzrosmaster"]
     
 
 #Board and Hat
@@ -43,6 +42,6 @@ RunningNodes = {
     "HatController_Node" => device["ControlModule2"]
 
 #User Control
-    "Audio_Node" => device["ControlModule1"]
+    #"Audio_Node" => device["ControlModule1"]
     
 }

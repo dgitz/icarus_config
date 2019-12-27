@@ -1,9 +1,7 @@
 <?xml version="1.0" ?>
 <TopicMapFile>
   <TopicMapList>
-    <!--
     <TopicMap>
-        
         <OutputMode>
             <Mode>Direct</Mode>
         </OutputMode>
@@ -17,10 +15,10 @@
         </InputChannel>
         <Outputs>
             <OutputChannel>
-                <Type>icarus_rover_v2/pin</Type>
+                <Type>eros/pin</Type>
                 <Topic>/PanServo</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
-                <PinNumber>0</PinNumber>
+                <PinName>CH0</PinName>
                 <Function>PWMOutput-NonActuator</Function>
                 <MaxValue>1000</MaxValue>
                 <MinValue>2000</MinValue>
@@ -43,10 +41,10 @@
         </InputChannel>
         <Outputs>
             <OutputChannel>
-                <Type>icarus_rover_v2/pin</Type>
+                <Type>eros/pin</Type>
                 <Topic>/TiltServo</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
-                <PinNumber>1</PinNumber>
+                <PinName>CH1</PinName>
                 <Function>PWMOutput-NonActuator</Function>
                 <MaxValue>1800</MaxValue>
                 <MinValue>1200</MinValue>
@@ -55,7 +53,6 @@
             </OutputChannel>
         </Outputs>
 	</TopicMap>
-    -->
     <TopicMap>
         <OutputMode>
             <Mode>Direct</Mode>
@@ -73,10 +70,10 @@
                 <Type>eros/pin</Type>
                 <Topic>/LeftMotorController</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
-                <PinNumber>2</PinNumber>
+                <PinName>CH2</PinName>
                 <Function>PWMOutput</Function>
-                <MaxValue>2000</MaxValue>
-                <MinValue>1000</MinValue>
+                <MaxValue>1575</MaxValue>
+                <MinValue>1425</MinValue>
                 <NeutralValue>1500</NeutralValue>
                 <Deadband>0</Deadband>
             </OutputChannel>
@@ -84,13 +81,14 @@
                 <Type>eros/pin</Type>
                 <Topic>/RightMotorController</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
-                <PinNumber>3</PinNumber>
+                <PinName>CH3</PinName>
                 <Function>PWMOutput</Function>
-                <MaxValue>2000</MaxValue>
-                <MinValue>1000</MinValue>
+                <MaxValue>1575</MaxValue>
+                <MinValue>1425</MinValue>
                 <NeutralValue>1500</NeutralValue>
                 <Deadband>0</Deadband>
             </OutputChannel>
+            
         </Outputs>
 	</TopicMap>
   </TopicMapList>
