@@ -18,7 +18,7 @@
                 <Type>eros/pin</Type>
                 <Topic>/PanServo</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
-                <PinNumber>0</PinNumber>
+                <PinName>CH0</PinName>
                 <Function>PWMOutput-NonActuator</Function>
                 <MaxValue>1000</MaxValue>
                 <MinValue>2000</MinValue>
@@ -44,7 +44,7 @@
                 <Type>eros/pin</Type>
                 <Topic>/TiltServo</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
-                <PinNumber>1</PinNumber>
+                <PinName>CH1</PinName>
                 <Function>PWMOutput-NonActuator</Function>
                 <MaxValue>1800</MaxValue>
                 <MinValue>1200</MinValue>
@@ -70,7 +70,7 @@
                 <Type>eros/pin</Type>
                 <Topic>/LeftMotorController</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
-                <PinNumber>2</PinNumber>
+                <PinName>CH2</PinName>
                 <Function>PWMOutput</Function>
                 <MaxValue>1575</MaxValue>
                 <MinValue>1425</MinValue>
@@ -81,7 +81,7 @@
                 <Type>eros/pin</Type>
                 <Topic>/RightMotorController</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
-                <PinNumber>3</PinNumber>
+                <PinName>CH3</PinName>
                 <Function>PWMOutput</Function>
                 <MaxValue>1575</MaxValue>
                 <MinValue>1425</MinValue>

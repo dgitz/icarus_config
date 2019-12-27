@@ -108,10 +108,10 @@
         <HatCount>3</HatCount>
         <SensorCount>0</SensorCount>
         <Pin>
-            <Number>16</Number>
             <Function>DigitalInput-Safety</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>ArmSwitch</Name>
+            <Name>GPIO04</Name>
+            <ConnectedDevice>ArmSwitch</ConnectedDevice>
         </Pin>
     </Device>
     <Device>
@@ -124,8 +124,7 @@
         <BoardCount>0</BoardCount>
         <PinCount>4</PinCount>
         <Pin>
-            <Name>PanServo</Name>
-            <Number>0</Number>
+            <Name>CH0</Name>
             <Function>PWMOutput-NonActuator</Function>
             <ConnectedDevice>PanServo</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
@@ -133,8 +132,7 @@
             <MinValue>1000</MinValue>
         </Pin>
         <Pin>
-            <Name>TiltServo</Name>
-            <Number>1</Number>
+            <Name>CH1</Name>
             <Function>PWMOutput-NonActuator</Function>
             <ConnectedDevice>TiltServo</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
@@ -142,8 +140,7 @@
             <MinValue>1000</MinValue>
         </Pin>
         <Pin>
-            <Name>LeftMotorController</Name>
-            <Number>2</Number>
+            <Name>CH2</Name>
             <Function>PWMOutput</Function>
             <ConnectedDevice>LeftMotorController</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
@@ -151,8 +148,7 @@
             <MinValue>1000</MinValue>
         </Pin>
         <Pin>
-            <Name>RightMotorController</Name>
-            <Number>3</Number>
+            <Name>CH3</Name>
             <Function>PWMOutput</Function>
             <ConnectedDevice>RightMotorController</ConnectedDevice>
             <DefaultValue>1500</DefaultValue>
@@ -251,32 +247,16 @@
         <PinCount>4</PinCount>
         <SensorCount>4</SensorCount>
         <Pin>
-            <Number>0</Number>
             <Function>QuadratureEncoderInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>LeftEncoder</Name>
+            <Name>0</Name>
             <ConnectedSensor>LeftEncoder</ConnectedSensor>
         </Pin>
         <Pin>
-            <Number>1</Number>
             <Function>QuadratureEncoderInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>RightEncoder</Name>
+            <Name>1</Name>
             <ConnectedSensor>RightEncoder</ConnectedSensor>
-        </Pin>
-        <Pin>
-            <Number>2</Number>
-            <Function>AnalogInput</Function>
-            <DefaultValue>0</DefaultValue>
-            <Name>BucketAngleSensor</Name>
-            <ConnectedSensor>BucketAngleSensor</ConnectedSensor>
-        </Pin>
-        <Pin>
-            <Number>3</Number>
-            <Function>AnalogInput</Function>
-            <DefaultValue>0</DefaultValue>
-            <Name>BucketLiftSensor</Name>
-            <ConnectedSensor>BucketLiftSensor</ConnectedSensor>
         </Pin>
     </Device>
     <Device>
@@ -289,31 +269,27 @@
         <PinCount>4</PinCount>
         <SensorCount>4</SensorCount>
         <Pin>
-            <Number>0</Number>
             <Function>UltraSonicSensorInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>FLSonar</Name>
+            <Name>PB4</Name>
             <ConnectedSensor>FLSonar</ConnectedSensor>
         </Pin>
         <Pin>
-            <Number>1</Number>
             <Function>UltraSonicSensorInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>FRSonar</Name>
+            <Name>PB5</Name>
             <ConnectedSensor>FRSonar</ConnectedSensor>
         </Pin>
         <Pin>
-            <Number>2</Number>
             <Function>UltraSonicSensorInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>BLSonar</Name>
+            <Name>PB6</Name>
             <ConnectedSensor>BLSonar</ConnectedSensor>
         </Pin>
         <Pin>
-            <Number>3</Number>
             <Function>UltraSonicSensorInput</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>BRSonar</Name>
+            <Name>PB7</Name>
             <ConnectedSensor>BRSonar</ConnectedSensor>
         </Pin>
     </Device>
