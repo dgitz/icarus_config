@@ -19,13 +19,15 @@ RunningNodes = {
     "Master_Node" => device["ControlModule1"]
     "Master_Node" => device["ControlModule2"]
     "Master_Node" => device["dgitzdev"]
+    "Master_Node" => device["dgitzrosmaster"]
     "Command_Node" => device["ControlModule1"]
 
 #Diagnostics
     "SnapshotMaster_Node" => device["dgitzdev"]
     "SnapshotSlave_Node" => device["ControlModule1"]
     "SnapshotSlave_Node" => device["ControlModule2"]
-    #"DataLogger_Node" => device["dgitzdev"]
+    "SnapshotSlave_Node" => device["dgitzrosmaster"]
+    "DataLogger_Node" => device["dgitzrosmaster"]
     "Diagnostic_Node" => device["ControlModule2"]
     #"Safety_Node"       => device["ControlModule1"]
 

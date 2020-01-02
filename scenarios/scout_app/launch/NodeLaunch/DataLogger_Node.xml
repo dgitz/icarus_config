@@ -2,7 +2,7 @@
         <param name="startup_delay"       value="5.0"/>
         <param name="verbosity_level"       value="NOTICE"/>
         <param name="require_pps_to_start"  value="false"/> 
-        <param name="LogFile_Duration"      value="7200.0"/>
+        <param name="LogFile_Duration"      value="600.0"/>
         <param name="LogFile_Directory"     value="/home/robot/storage/DATALOGS/"/> 
         <param name="SnapshotMode"          value="true"/>
 </node>

@@ -21,7 +21,7 @@
         <Address>
             <Capability>Rover</Capability>
             <Name>Rover</Name>
-            <Network>10.0.0.110</Network>
+            <Network>10.0.0.190</Network>
         </Address>
         <Address>
             <Capability>Router</Capability>
