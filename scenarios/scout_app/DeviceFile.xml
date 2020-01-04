@@ -110,7 +110,7 @@
         <Pin>
             <Function>DigitalInput-Safety</Function>
             <DefaultValue>0</DefaultValue>
-            <Name>GPIO04</Name>
+            <Name>GPIO25</Name>
             <ConnectedDevice>ArmSwitch</ConnectedDevice>
         </Pin>
     </Device>
