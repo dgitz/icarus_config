@@ -29,6 +29,7 @@
             <File>/var/log/syslog</File>
             <File>/var/log/boot.log</File>
             <File>/var/log/kern.log</File>
+            <File>/home/robot/config/FirmwareList.txt</File>
         </Architecture>
         <Architecture type="armv7l">
             <DeviceSnapshotPath>/home/robot/storage/SNAPSHOT/DEVICESNAPSHOT/</DeviceSnapshotPath>
@@ -53,6 +54,7 @@
             <File>/var/log/ntp.drift</File>
             <File>/var/log/bootstrap.log</File>
             <File>/boot/config.txt</File>
+            <File>/home/robot/config/FirmwareList.txt</File>
         </Architecture>
     </SnapshotConfig>
 </SnapshotConfigFile>
