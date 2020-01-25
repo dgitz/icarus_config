@@ -1,10 +1,11 @@
 <?xml version="1.0" ?>
 <Sensor>
     <Type>UltraSonicSensor</Type>
+    <PartNumber>110001</PartNumber>
     <OutputDataType>signal</OutputDataType>
-    <Units>inch</Units>
+    <Units>meter</Units>
     <MinInputValue>0.0</MinInputValue>
-    <MaxInputValue>256.0</MaxInputValue>
+    <MaxInputValue>6.5024</MaxInputValue>
     <MinOutputValue>0.0</MinOutputValue>
-    <MaxOutputValue>256.0</MaxOutputValue>
+    <MaxOutputValue>6.5024</MaxOutputValue>
 </Sensor>
