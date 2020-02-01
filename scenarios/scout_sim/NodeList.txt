@@ -3,11 +3,8 @@
 #Use a pound sign for comments
 AlwaysOnNodes = {
 #Timing
-    #"TimeMaster_Node" => device["dgitzdev"]
     
 #Communications
-    #"NetworkTransceiver_Node" => device["ControlModule2"]
-    #"TopicRemapper_Node" => device["ControlModule2"]
 }
 #Normal Running Section
 RunningNodes = {
@@ -33,21 +30,13 @@ RunningNodes = {
     "DataLogger_Node" => device["dgitzrosmaster"]
     "Diagnostic_Node" => device["dgitzdev"]
 
-#Sensors
-    #"IMU_Node" => device["ControlModule1"]
+#Sensors    
 
-    
-
-#Pose
-
-    
+#Pose    
 
 #Board and Hat
-    #"BoardController_Node" => device["ControlModule2"]
-    #"HatController_Node" => device["ControlModule2"]
 
 #User Control
-    #"Audio_Node" => device["ControlModule1"]
     
 }
 

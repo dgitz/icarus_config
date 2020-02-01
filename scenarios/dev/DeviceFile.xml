@@ -88,7 +88,7 @@
         <PartNumber>110010</PartNumber>
         <DeviceName>RaspiCam1</DeviceName>
         <DeviceType>RaspiberryPiCamera</DeviceType>
-        <Capability>CameraStream</Capability>
+        <ID>1</ID>
     </Device>
     <Device>
         <ParentDevice>ControlModule1</ParentDevice>
