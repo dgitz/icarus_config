@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<SensorConfigFile>
+    <PartNumber>110010</PartNumber>
+    <DeviceType>RaspiberryPiCamera</DeviceType>
+    <ID>RaspiCam1</ID>
+    <Statistics>
+        <General>
+            <HorizontalFOV>62.2</HorizontalFOV>  <!-- Degrees -->
+            <VerticalFOV>48.8</VerticalFOV>      <!-- Degrees -->
+        </General>
+    </Statistics>
+</SensorConfigFile>
