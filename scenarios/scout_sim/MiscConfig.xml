@@ -21,12 +21,12 @@
         <Address>
             <Capability>Rover</Capability>
             <Name>Rover</Name>
-            <Network>10.0.0.190</Network>
+            <Network>10.0.0.224</Network>
         </Address>
         <Address>
             <Capability>Router</Capability>
             <Name>Router</Name>
-            <Network>10.0.0.190</Network>
+            <Network>10.0.0.224</Network>
         </Address>
         <Address>
             <Capability>ROSServer</Capability>
