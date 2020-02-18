@@ -1,5 +1,11 @@
-Node:	system_monitor	Launched:	14/02/2020 08:17:03
-Node:	gazebo	Launched:	14/02/2020 08:17:03
-Node:	dgitzdev_timemaster_node	Launched:	14/02/2020 08:17:03
-Node:	dgitzdev_pose_node	Launched:	14/02/2020 08:17:03
-Node:	dgitzdev_master_node	Launched:	14/02/2020 08:17:03
+Node:	dgitzdev_command_node	Launched:	18/02/2020 06:07:13
+Node:	gazebo	Launched:	18/02/2020 06:07:13
+Node:	gazebo_gui	Launched:	18/02/2020 06:07:13
+Node:	dgitzdev_snapshot_node	Launched:	18/02/2020 06:07:13
+Node:	dgitzdev_timemaster_node	Launched:	18/02/2020 06:07:13
+Node:	dgitzdev_topicremapper_node	Launched:	18/02/2020 06:07:13
+Node:	dgitzdev_database_node	Launched:	18/02/2020 06:07:13
+Node:	dgitzdev_master_node	Launched:	18/02/2020 06:07:13
+Node:	system_monitor	Launched:	18/02/2020 06:07:13
+Node:	dgitzdev_diagnostic_node	Launched:	18/02/2020 06:07:13
+Node:	dgitzdev_networktransceiver_node	Launched:	18/02/2020 06:07:13

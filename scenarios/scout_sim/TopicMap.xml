@@ -51,6 +51,17 @@
                 <NeutralValue>1500</NeutralValue>
                 <Deadband>0</Deadband>
             </OutputChannel>
+            <OutputChannel>
+                <Type>eros/pin</Type>
+                <Topic>/LeftMotorController</Topic>
+                <ParentDevice>PWMHat1</ParentDevice>
+                <PinName>CH2</PinName>
+                <Function>PWMOutput</Function>
+                <MaxValue>2000</MaxValue>
+                <MinValue>1000</MinValue>
+                <NeutralValue>1500</NeutralValue>
+                <Deadband>0</Deadband>
+            </OutputChannel>
         </Outputs>
 	</TopicMap>
     <TopicMap>
@@ -68,23 +79,12 @@
         <Outputs>
             <OutputChannel>
                 <Type>eros/pin</Type>
-                <Topic>/LeftMotorController</Topic>
-                <ParentDevice>PWMHat1</ParentDevice>
-                <PinName>CH2</PinName>
-                <Function>PWMOutput</Function>
-                <MaxValue>1575</MaxValue>
-                <MinValue>1425</MinValue>
-                <NeutralValue>1500</NeutralValue>
-                <Deadband>0</Deadband>
-            </OutputChannel>
-            <OutputChannel>
-                <Type>eros/pin</Type>
                 <Topic>/RightMotorController</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
                 <PinName>CH3</PinName>
                 <Function>PWMOutput</Function>
-                <MaxValue>1575</MaxValue>
-                <MinValue>1425</MinValue>
+                <MaxValue>2000</MaxValue>
+                <MinValue>1000</MinValue>
                 <NeutralValue>1500</NeutralValue>
                 <Deadband>0</Deadband>
             </OutputChannel>
