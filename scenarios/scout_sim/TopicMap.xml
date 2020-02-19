@@ -53,7 +53,7 @@
             </OutputChannel>
             <OutputChannel>
                 <Type>eros/pin</Type>
-                <Topic>/LeftMotorController</Topic>
+                <Topic>/RightMotorController</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
                 <PinName>CH2</PinName>
                 <Function>PWMOutput</Function>
@@ -79,7 +79,7 @@
         <Outputs>
             <OutputChannel>
                 <Type>eros/pin</Type>
-                <Topic>/RightMotorController</Topic>
+                <Topic>/LeftMotorController</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
                 <PinName>CH3</PinName>
                 <Function>PWMOutput</Function>
