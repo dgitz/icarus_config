@@ -3,22 +3,39 @@
   <TopicMapList>
     <TopicMap>
         <OutputMode>
-            <Mode>Direct</Mode>
+            <Mode>ArcadeMix</Mode>
         </OutputMode>
-        <InputChannel>
-            <Type>sensor_msgs/Joy</Type>
-            <Topic>/DriverStation/joystick</Topic>
-            <Name>axis</Name>
-            <Index>0</Index>
-            <MinValue>-1</MinValue>
-            <MaxValue>1</MaxValue>
-        </InputChannel>
+        <Inputs>
+            <InputChannel>
+                <Type>sensor_msgs/Joy</Type>
+                <Topic>/DriverStation/joystick</Topic>
+                <Name>axis</Name>
+                <Index>1</Index> <!-- Forward Axis-->
+            </InputChannel>
+            <InputChannel>
+                <Type>sensor_msgs/Joy</Type>
+                <Topic>/DriverStation/joystick</Topic>
+                <Name>axis</Name>
+                <Index>0</Index> <!-- Lateral Axis-->
+            </InputChannel>
+        </Inputs>
         <Outputs>
             <OutputChannel>
                 <Type>eros/pin</Type>
-                <Topic>/PanServo</Topic>
+                <Topic>/LeftMotorController</Topic>
                 <ParentDevice>PWMHat1</ParentDevice>
-                <PinName>CH0</PinName>
+                <PinName>CH3</PinName>
+                <Function>PWMOutput-NonActuator</Function>
+                <MaxValue>1000</MaxValue>
+                <MinValue>2000</MinValue>
+                <NeutralValue>1500</NeutralValue>
+                <Deadband>0</Deadband>
+            </OutputChannel>
+            <OutputChannel>
+                <Type>eros/pin</Type>
+                <Topic>/RightMotorController</Topic>
+                <ParentDevice>PWMHat1</ParentDevice>
+                <PinName>CH2</PinName>
                 <Function>PWMOutput-NonActuator</Function>
                 <MaxValue>1000</MaxValue>
                 <MinValue>2000</MinValue>
@@ -31,36 +48,18 @@
         <OutputMode>
             <Mode>Direct</Mode>
         </OutputMode>
-        <InputChannel>
-            <Type>sensor_msgs/Joy</Type>
-            <Topic>/DriverStation/joystick</Topic>
-            <Name>axis</Name>
-            <Index>1</Index>
-            <MinValue>-1</MinValue>
-            <MaxValue>1</MaxValue>
-        </InputChannel>
+        <Inputs>
+            <InputChannel>
+                <Type>sensor_msgs/Joy</Type>
+                <Topic>/DriverStation/joystick</Topic>
+                <Name>button</Name>
+                <Index>5</Index>
+            </InputChannel>
+        </Inputs>
         <Outputs>
             <OutputChannel>
-                <Type>eros/pin</Type>
-                <Topic>/TiltServo</Topic>
-                <ParentDevice>PWMHat1</ParentDevice>
-                <PinName>CH1</PinName>
-                <Function>PWMOutput-NonActuator</Function>
-                <MaxValue>1800</MaxValue>
-                <MinValue>1200</MinValue>
-                <NeutralValue>1500</NeutralValue>
-                <Deadband>0</Deadband>
-            </OutputChannel>
-            <OutputChannel>
-                <Type>eros/pin</Type>
-                <Topic>/RightMotorController</Topic>
-                <ParentDevice>PWMHat1</ParentDevice>
-                <PinName>CH2</PinName>
-                <Function>PWMOutput</Function>
-                <MaxValue>2000</MaxValue>
-                <MinValue>1000</MinValue>
-                <NeutralValue>1500</NeutralValue>
-                <Deadband>0</Deadband>
+                <Type>std_msgs/Bool</Type>
+                <Topic>/TiltUp</Topic>
             </OutputChannel>
         </Outputs>
 	</TopicMap>
@@ -68,27 +67,57 @@
         <OutputMode>
             <Mode>Direct</Mode>
         </OutputMode>
-        <InputChannel>
-            <Type>sensor_msgs/Joy</Type>
-            <Topic>/DriverStation/joystick</Topic>
-            <Name>axis</Name>
-            <Index>2</Index>
-            <MinValue>-1</MinValue>
-            <MaxValue>1</MaxValue>
-        </InputChannel>
+        <Inputs>
+            <InputChannel>
+                <Type>sensor_msgs/Joy</Type>
+                <Topic>/DriverStation/joystick</Topic>
+                <Name>button</Name>
+                <Index>6</Index>
+            </InputChannel>
+        </Inputs>
         <Outputs>
             <OutputChannel>
-                <Type>eros/pin</Type>
-                <Topic>/LeftMotorController</Topic>
-                <ParentDevice>PWMHat1</ParentDevice>
-                <PinName>CH3</PinName>
-                <Function>PWMOutput</Function>
-                <MaxValue>2000</MaxValue>
-                <MinValue>1000</MinValue>
-                <NeutralValue>1500</NeutralValue>
-                <Deadband>0</Deadband>
+                <Type>std_msgs/Bool</Type>
+                <Topic>/TiltDown</Topic>
             </OutputChannel>
-            
+        </Outputs>
+	</TopicMap>
+    <TopicMap>
+        <OutputMode>
+            <Mode>Direct</Mode>
+        </OutputMode>
+        <Inputs>
+            <InputChannel>
+                <Type>sensor_msgs/Joy</Type>
+                <Topic>/DriverStation/joystick</Topic>
+                <Name>button</Name>
+                <Index>3</Index>
+            </InputChannel>
+        </Inputs>
+        <Outputs>
+            <OutputChannel>
+                <Type>std_msgs/Bool</Type>
+                <Topic>/PanLeft</Topic>
+            </OutputChannel>
+        </Outputs>
+	</TopicMap>
+    <TopicMap>
+        <OutputMode>
+            <Mode>Direct</Mode>
+        </OutputMode>
+        <Inputs>
+            <InputChannel>
+                <Type>sensor_msgs/Joy</Type>
+                <Topic>/DriverStation/joystick</Topic>
+                <Name>button</Name>
+                <Index>4</Index>
+            </InputChannel>
+        </Inputs>
+        <Outputs>
+            <OutputChannel>
+                <Type>std_msgs/Bool</Type>
+                <Topic>/PanRight</Topic>
+            </OutputChannel>
         </Outputs>
 	</TopicMap>
   </TopicMapList>
