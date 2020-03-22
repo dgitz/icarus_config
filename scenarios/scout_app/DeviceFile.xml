@@ -11,6 +11,15 @@
     </Device>
     <Device>
         <ParentDevice>None</ParentDevice>
+        <PartNumber>100011</PartNumber>
+        <DeviceName>GPUModule1</DeviceName>
+        <DeviceType>GPUModule</DeviceType>
+        <PrimaryIP>10.0.0.10</PrimaryIP>
+        <Architecture>aarch64</Architecture>
+        <Capability>ROS</Capability>
+    </Device>
+    <Device>
+        <ParentDevice>None</ParentDevice>
         <PartNumber>100003</PartNumber>
         <DeviceName>DevModule1</DeviceName>
         <DeviceType>ControlModule</DeviceType>

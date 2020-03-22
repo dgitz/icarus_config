@@ -4,6 +4,7 @@
 AlwaysOnNodes = {
     "TimeMaster_Node" => device["ControlModule1"]
     "TimeSlave_Node" => device["ControlModule2"]
+    "TimeSlave_Node" => device["GPUModule1"]
     #Communications
     "NetworkTransceiver_Node" => device["ControlModule2"] 
     
@@ -20,6 +21,7 @@ RunningNodes = {
     "Master_Node" => device["ControlModule2"]
     "Master_Node" => device["dgitzdev"]
     "Master_Node" => device["dgitzrosmaster"]
+    "Master_Node" => device["GPUModule1"]
     "Command_Node" => device["ControlModule1"]
 
 #Diagnostics
@@ -27,6 +29,7 @@ RunningNodes = {
     "SnapshotSlave_Node" => device["ControlModule1"]
     "SnapshotSlave_Node" => device["ControlModule2"]
     "SnapshotSlave_Node" => device["dgitzrosmaster"]
+    "SnapshotSlave_Node" => device["GPUModule1"]
     "DataLogger_Node" => device["dgitzrosmaster"]
     "Diagnostic_Node" => device["ControlModule2"]
     #"Safety_Node"       => device["ControlModule1"]
