@@ -19,14 +19,6 @@
         <Capability>ROS</Capability>
     </Device>
     <Device>
-        <ParentDevice>None</ParentDevice>
-        <PartNumber>100003</PartNumber>
-        <DeviceName>DevModule1</DeviceName>
-        <DeviceType>ControlModule</DeviceType>
-        <PrimaryIP>10.0.0.161</PrimaryIP>
-        <Architecture>armv7l</Architecture>
-    </Device>
-    <Device>
         <ParentDevice>ControlModule2</ParentDevice>
         <PartNumber>555005</PartNumber>
         <DeviceName>MainBattery</DeviceName>
@@ -51,7 +43,7 @@
         <PartNumber>UNKNOWN</PartNumber>
         <DeviceName>dgitzdev</DeviceName>
         <DeviceType>ComputeModule</DeviceType>
-        <PrimaryIP>10.0.0.224</PrimaryIP>
+        <PrimaryIP>10.0.0.190</PrimaryIP>
         <Architecture>x86_64</Architecture>
         <ID>2</ID>
         <Capability>ROS</Capability>

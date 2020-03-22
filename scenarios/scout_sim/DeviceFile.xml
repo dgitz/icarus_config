@@ -27,7 +27,7 @@
         <PartNumber>UNKNOWN</PartNumber>
         <DeviceName>dgitzdev</DeviceName>
         <DeviceType>ComputeModule</DeviceType>
-        <PrimaryIP>10.0.0.90</PrimaryIP>
+        <PrimaryIP>10.0.0.190</PrimaryIP>
         <Architecture>x86_64</Architecture>
         <ID>2</ID>
         <Capability>ROS</Capability>
