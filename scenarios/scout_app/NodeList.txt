@@ -1,4 +1,4 @@
-#Available devices: dgitzrosmaster,ControlModule1,ControlModule2,dgitzrosmaster,DevModule1
+#Available devices: dgitzrosmaster,ControlModule1,ControlModule2,dgitzdev,DevModule1,GPUModule1
 #Always Running Section
 #Use a pound sign for comments
 AlwaysOnNodes = {
@@ -50,3 +50,4 @@ RunningNodes = {
     #"Audio_Node" => device["ControlModule1"]
     
 }
+

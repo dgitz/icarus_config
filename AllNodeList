@@ -1,7 +1,6 @@
-http://dgitzdev:39517/ 	/dgitzdev_snapshot_node
-http://dgitzdev:45533/ 	/dgitzdev_master_node
-http://dgitzdev:45653/ 	/rostopic_19525_1584890961030
-http://GPUModule1:35151/ 	/GPUModule1_timeslave_node
-http://GPUModule1:35345/ 	/GPUModule1_master_node
-http://GPUModule1:37419/ 	/GPUModule1_snapshot_node
+http://dgitzdev:38273/ 	/dgitzdev_master_node
+http://dgitzdev:42005/ 	/dgitzdev_snapshot_node
+http://GPUModule1:35417/ 	/GPUModule1_timeslave_node
+http://GPUModule1:37379/ 	/GPUModule1_snapshot_node
+http://GPUModule1:45223/ 	/GPUModule1_master_node
 http://MasterModule:43033/ 	/rosout
