@@ -41,19 +41,6 @@
     <Device>
         <ParentDevice>None</ParentDevice>
         <PartNumber>UNKNOWN</PartNumber>
-        <DeviceName>dgitzdev</DeviceName>
-        <DeviceType>ComputeModule</DeviceType>
-        <PrimaryIP>10.0.0.190</PrimaryIP>
-        <Architecture>x86_64</Architecture>
-        <ID>2</ID>
-        <Capability>ROS</Capability>
-        <BoardCount>0</BoardCount>
-        <HatCount>0</HatCount>
-        <SensorCount>0</SensorCount>
-    </Device>
-    <Device>
-        <ParentDevice>None</ParentDevice>
-        <PartNumber>UNKNOWN</PartNumber>
         <DeviceName>BuildServer0</DeviceName>
         <DeviceType>BuildServer</DeviceType>
         <PrimaryIP>10.0.0.180</PrimaryIP>
