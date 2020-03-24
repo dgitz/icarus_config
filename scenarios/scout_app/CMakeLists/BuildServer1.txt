@@ -13,7 +13,11 @@ find_package(catkin REQUIRED COMPONENTS
   roslaunch
   message_generation
   sensor_msgs
+<<<<<<< Updated upstream
   #cv_bridge
+=======
+  cv_bridge
+>>>>>>> Stashed changes
   roslib
   #tf
   rosbag
@@ -138,7 +142,11 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
   ${Boost_INCLUDE_DIRS}
   ${TinyXML_INCLUDE_DIRS}
+<<<<<<< Updated upstream
   #${OpenCV_INCLUDE_DIRS}
+=======
+  ${OpenCV_INCLUDE_DIRS}
+>>>>>>> Stashed changes
   ${roscpp_INCLUDE_DIRS}
 )
 
@@ -213,7 +221,15 @@ install(DIRECTORY include/${PROJECT_NAME}/
 # catkin_add_nosetests(test)
 #Libraries-General
 add_library(resourcemonitor util/resourcemonitor.cpp)
+<<<<<<< Updated upstream
 add_dependencies(resourcemonitor eros_generate_messages_cpp)
+=======
+#target_link_libraries(resourcemonitor ${catkin_LIBRARIES})
+add_dependencies(resourcemonitor eros_generate_messages_cpp)
+#add_dependencies(resourcemonitor ${catkin_EXPORTED_TARGETS})
+add_library(controlgroup util/controlgroup.cpp)
+add_dependencies(controlgroup eros_generate_messages_cpp)
+>>>>>>> Stashed changes
 
 #Libraries-Communications
 add_library(udpmessage util/udpmessage.cpp)
