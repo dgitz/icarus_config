@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo docker rm --force $(sudo docker ps -a -q)
+sleep 5
 sudo docker run -d \
     --name bagdb-postgres \
     --net bagdb \
